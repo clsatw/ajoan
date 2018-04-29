@@ -1,0 +1,22 @@
+<!--
+  <div class="grid grid-pad">
+    <a *ngFor="let prod of prods |async" class='col-1-4'
+    [class.selected]="prod === selectedProd"
+    (click)="onSelect(prod)">
+    <a routerLink="/detail/{{prod.id}}">
+      <span class='badge'>{{prod.id}}</span>{{prod.name}}
+    </a>
+  </li>
+</div>
+
+<app-prod-detail [prod]='selectedProd'></app-prod-detail> -->
+
+<div class="grid grid-pad">
+    <h1 class='mat-display-1'>Iot Products</h1>
+    <a *ngFor="let prod of prods |async" class="col-1-4"
+        routerLink="/products/detail/{{prod.id}}">
+      <div class="module hero">
+        <h5>{{prod.name}}</h5>
+      </div>
+    </a>
+  </div>

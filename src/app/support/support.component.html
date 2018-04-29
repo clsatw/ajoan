@@ -1,0 +1,39 @@
+<!--
+<mat-toolbar color='warn'>
+  <mat-toolbar-row>Support</mat-toolbar-row>
+  <mat-toolbar-row>Support1</mat-toolbar-row>
+</mat-toolbar>
+<mat-dialog-content>
+<mat-dialog-actions>
+-->
+<div class='container'>
+<mat-nav-list>
+  <h2 class=mat-h2>Questions:</h2>
+  <mat-list-item *ngFor="let faq of faqs" [class.selected]="faq === selectedFaq" (click)='onSelect(faq)'>
+    {{faq.q}}
+  </mat-list-item>
+</mat-nav-list>
+
+<mat-divider></mat-divider>
+
+<div *ngIf='selectedFaq'>
+  <h2 class=mat-h2>Answer:</h2>
+
+  <ul>
+    <li *ngFor='let a of selectedFaq.answers'>
+      <h4 class='mat-body-2' matLine>{{a}}</h4>
+    </li>
+  </ul>
+
+
+  <div *ngIf='selectedFaq.aUrl'>
+    <a href="{{selectedFaq.aUrl}}">click here for video footage</a>
+  </div>
+  <!--
+    <video controls autoplay>
+      <source src={{selectedFaq.aUrl}} type='video/mp4'>
+      </video>
+-->
+
+</div>
+</div>

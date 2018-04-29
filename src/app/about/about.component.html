@@ -1,0 +1,38 @@
+<div class='container'>
+    <mat-toolbar>
+        <mat-toolbar-row>
+          <span>First Row</span>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+          <span>Second Row</span>
+        </mat-toolbar-row>
+      </mat-toolbar>
+
+      <mat-toolbar color="primary">
+          <span>Application Title</span>
+
+          <!-- This fills the remaining space of the current row -->
+          <span class="example-fill-remaining-space"></span>
+
+          <span>Right Aligned Text</span>
+        </mat-toolbar>
+
+        <mat-tab-group>
+            <mat-tab>
+              <ng-template mat-tab-label>
+                The <em>best</em> pasta
+              </ng-template>
+              <h1>Best pasta restaurants</h1>
+              <p>...</p>
+            </mat-tab>
+            <mat-tab>
+
+              <ng-template mat-tab-label>
+                <mat-icon>thumb_down</mat-icon> The worst sushi
+              </ng-template>
+              <h1>Terrible sushi restaurants</h1>
+              <p>...</p>
+            </mat-tab>
+          </mat-tab-group>
+</div>
+
