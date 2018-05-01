@@ -35,8 +35,8 @@ export class CustomerListComponent implements OnInit {
   }
   goBack(): void {
     try {
-      throw new Error('cannot go back');
-      // this.location.back();
+      // throw new Error('cannot go back');
+      this.location.back();
     } catch (err) {
       gtag('event', 'exception', {
         'description': err,
