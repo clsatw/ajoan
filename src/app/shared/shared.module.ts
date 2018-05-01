@@ -39,7 +39,7 @@ import {
     MatGridListModule,
     MatMenuModule,
     MatTabsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports: [
     MatCheckboxModule,
