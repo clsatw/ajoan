@@ -24,13 +24,19 @@
 <div class="container">
 
   <mat-grid-list cols="4" rowHeight="100px">
-    <mat-grid-tile class='mat-typography'
+    <mat-grid-tile
       *ngFor='let prod of prods|async'
       routerLink="/products/detail/{{prod.id}}"
-      [colspan]='1'
-      [rowspan]='1' style="background-color:#ff7e00">
+      [colspan]='prod.col'
+      [rowspan]='prod.row' style="background-color:tomato">
+
       <div class="module hero">
-      {{prod.name}}
+        <mat-card class='mat-typography' style='margin: 2em'>
+          <img  mat-card-image src='{{prod.pixUrl}}'>
+        <mat-card-footer class='mat-typography'>
+          {{prod.name}}
+          </mat-card-footer>
+        </mat-card>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
