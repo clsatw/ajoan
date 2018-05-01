@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Inject, InjectionToken } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,6 +11,13 @@ import { ProdService } from './prod.service';
 import { AppMainNavComponent } from './app-main-nav/app-main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { environment } from './core/environment.prod';
+
+// 步驟 1
+export const EnvironmentToken = new InjectionToken('ENVIRONMENT');
+
+// 步驟 2
+declare let gtag: Function;
 
 @NgModule({
   declarations: [
@@ -32,7 +39,13 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
   ],
   providers: [
     ProdService,
+    { provide: EnvironmentToken, useValue: environment },
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(@Inject(EnvironmentToken) private env: any) {
+    // 步驟 3
+    gtag('config', this.env.google.GA_TRACKING_ID);
+  }
+ }

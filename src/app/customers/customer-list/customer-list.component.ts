@@ -6,6 +6,9 @@ import { Location } from '@angular/common';
 import { Prod } from '../../core/models/prod';
 import { ProdService } from '../../prod.service';
 
+// for google analytics
+declare let gtag: Function;
+
 @Component({
   selector: 'app-prod-detail',
   templateUrl: './customer-list.component.html',
@@ -26,10 +29,19 @@ export class CustomerListComponent implements OnInit {
   }
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
+    gtag('event', 'view_item', { 'value': id });
     this.prodService.getProd(id)
       .subscribe(prod => this.prod = prod);
   }
   goBack(): void {
-    this.location.back();
+    try {
+      throw new Error('cannot go back');
+      // this.location.back();
+    } catch (err) {
+      gtag('event', 'exception', {
+        'description': err,
+        'fatal': false
+      });
+    }
   }
 }
