@@ -4,6 +4,8 @@ import { Prod } from '../../core/models/prod';
 import { ProdService } from '../../prod.service';
 import { Observable } from 'rxjs';
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -15,6 +17,7 @@ export class DashboardComponent implements OnInit {
   constructor(private prodService: ProdService) { }
 
   ngOnInit() {
+    gtag('event', 'view_item_list');
     this.getProds();
   }
 
