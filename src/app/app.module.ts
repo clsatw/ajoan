@@ -3,15 +3,15 @@ import { NgModule, Inject, InjectionToken } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CoreModule } from './core/core.module';
-import { ProdService } from './prod.service';
-
-import { AppMainNavComponent } from './app-main-nav/app-main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+
+import { AppMainNavComponent } from './app-main-nav/app-main-nav.component';
+import { AppComponent } from './app.component';
 import { environment } from './core/environment.prod';
+import { CoreModule } from './core/core.module';
+import { ProdService } from './prod.service';
 
 // 步驟 1
 export const EnvironmentToken = new InjectionToken('ENVIRONMENT');

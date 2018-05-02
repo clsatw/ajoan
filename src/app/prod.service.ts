@@ -15,7 +15,7 @@ export class ProdService {
 
   constructor(public matSnackBar: MatSnackBar) { }
   getProds(): Observable<Prod[]> {
-    this.matSnackBar.open('fetched product', 'OK', { duration: 2000, });
+    // this.matSnackBar.open('fetched product', 'OK', { duration: 2000, });
     return of(PRODS);
   }
   /** GET hero by id. Will 404 if id not found */

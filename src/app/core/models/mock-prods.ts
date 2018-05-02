@@ -10,7 +10,7 @@ export const PRODS: Prod[] = [
     url1: '/assets/waterpump1.mp4',
     url2: '/assets/waterpump-m.mp4',
     col: 1,
-    row: 3,
+    row: 25,
     pixUrl: '/assets/waterpump.png'
   },
 
@@ -22,7 +22,7 @@ export const PRODS: Prod[] = [
     url1: '/assets/manual-mode1-s.mp4',
     url2: '/assets/manual-mode2-s.mp4',
     col: 1,
-    row: 3,
+    row: 25,
     pixUrl: '/assets/autopilot.png'
   },
   {
@@ -34,7 +34,7 @@ export const PRODS: Prod[] = [
     url1: '/assets/auto-mode1-b.mp4',
     url2: '/assets/auto-mode2-m.mp4',
     col: 1,
-    row:3,
+    row: 25,
     pixUrl: '/assets/roachbot.jpg'
   },
   {
@@ -46,7 +46,7 @@ export const PRODS: Prod[] = [
     // url1: "/assets/auto-mode1-b.mp4",
     // url2: "/assets/auto-mode2-m.mp4"
     col: 1,
-    row: 2,
+    row: 25,
     pixUrl: '/assets/dolls.png'
   },
   {
@@ -54,7 +54,7 @@ export const PRODS: Prod[] = [
     name: 'Amazon Echo 聲控開關',
     desc: 'echo, turn on tv. Videos will be uploaded soon.',
     col: 1,
-    row: 2,
+    row: 25,
     pixUrl: '/assets/girl.png'
   },
   {
@@ -65,7 +65,7 @@ export const PRODS: Prod[] = [
     url1: '/assets/led1.mp4',
     url2: '/assets/led-m.mp4',
     col: 1,
-    row: 2,
+    row: 25,
     pixUrl: '/assets/led.png',
   },
   {
@@ -74,7 +74,7 @@ export const PRODS: Prod[] = [
     desc: `門窗被打開時, 自動送出簡訊, mobile notification, 及email 通知.
           to be released soon...`,
     col: 1,
-    row: 2,
+    row: 25,
     pixUrl: '/assets/ox.png'
   },
   {
@@ -82,21 +82,22 @@ export const PRODS: Prod[] = [
     name: '雲端 溫濕度感應器',
     desc: `dht`,
     col: 1,
-    row: 2,
+    row: 25,
     pixUrl: '/assets/eye.png'
   },
   {
-    id: 9, name: 'Iot 按紐',
+    id: 9,
+    name: 'Iot 按紐',
     desc: '開發中...',
     col: 1,
-    row: 2,
+    row: 25,
     pixUrl: '/assets/dht.png'
   },
   {
     id: 10, name: 'robot with camera',
     desc: '開發中...',
     col: 1,
-    row: 2,
+    row: 25,
     pixUrl: '/assets/car.png'
   }
 ];

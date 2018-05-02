@@ -72,14 +72,14 @@
         </mat-menu>
       </mat-card-header>
 
+      <video mat-card-image  controls autoplay>
+        <source src={{prod.url1}} type='video/mp4'>
+      </video>
+      <video  mat-card-image controls autoplay>
+        <source src={{prod.url2}} type='video/mp4'>
+      </video>
       <mat-card-content>
 
-        <video width='480' height='320' controls autoplay>
-          <source src={{prod.url1}} type='video/mp4'>
-        </video>
-        <video width='480' height='320' controls autoplay>
-          <source src={{prod.url2}} type='video/mp4'>
-        </video>
 
         <p class='mat-h4'>{{prod.desc}}</p>
 
