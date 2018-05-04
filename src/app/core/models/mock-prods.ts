@@ -71,19 +71,22 @@ export const PRODS: Prod[] = [
   {
     id: 7,
     name: '雲端 門窗監控',
-    desc: `門窗被打開時, 自動送出簡訊, mobile notification, 及email 通知.
-          to be released soon...`,
+    desc: `門窗被打開時, 自動送出簡訊, mobile notification, 及 email 通知.`,
     col: 1,
     row: 25,
-    pixUrl: '/assets/ox.png'
+    url1: '/assets/door_open.mp4',
+    url2: '/assets/door2.mp4',
+    pixUrl: '/assets/door.png'
   },
   {
     id: 8,
     name: '雲端 溫濕度感應器',
     desc: `dht`,
+    url1: '/assets/dht.mp4',
+    url2: '/assets/dht1.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/eye.png'
+    pixUrl: '/assets/dht1.png'
   },
   {
     id: 9,

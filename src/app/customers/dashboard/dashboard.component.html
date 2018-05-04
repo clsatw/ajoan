@@ -27,7 +27,7 @@
     <mat-grid-tile
      *ngFor='let prod of prods|async'
       routerLink="/products/detail/{{prod.id}}"
-      [style.background]="'lightblue'"
+     
       [colspan]='prod.col' [rowspan]='prod.row*ratio'>      
      
       <mat-card class='dashboard-card'>
