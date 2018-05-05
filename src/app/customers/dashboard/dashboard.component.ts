@@ -28,6 +28,7 @@ export class DashboardComponent implements OnInit {
   onResize(event) {
     this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 4;
     this.ratio = event.target.innerHeight / 1280;
+    this.ratio = Math.floor(this.ratio * 10) / 10;
   }
 
   onSelect(prod: Prod): void {

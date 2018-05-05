@@ -23,19 +23,19 @@
 
 <div class="container" >
 
-  <mat-grid-list cols={{breakpoint}} gutterSize='8px' rowHeight="10px">
+  <mat-grid-list [cols]='breakpoint' gutterSize='8px' rowHeight="10px">
     <mat-grid-tile
      *ngFor='let prod of prods|async'
       routerLink="/products/detail/{{prod.id}}"
-     
-      [colspan]='prod.col' [rowspan]='prod.row*ratio'>      
-     
+
+      [colspan]='prod.col' [rowspan]='prod.row*ratio'>
+
       <mat-card class='dashboard-card'>
         <img mat-card-image src={{prod.pixUrl}}>
         <mat-card-footer >
           <p class='mat-typography'>{{prod.name}}</p>
         </mat-card-footer>
-      </mat-card>       
+      </mat-card>
 
     </mat-grid-tile>
   </mat-grid-list>
