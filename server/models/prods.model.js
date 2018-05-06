@@ -1,30 +1,21 @@
 var mongoose = require('mongoose');
 
 var prodSchema = mongoose.Schema({
-	name: {
+	title: {
 		type: String,
 		required: true,
 		unique: true,
 		default: ''
-	},	
-	description: {
-		type: String
 	},
-	category: {
+	url: {
+    type: String,
+    default: ''
+	},
+	published: {
 		type: String,
 		required: true,
 		default: ''
 	},
-	imgUrl: {
-		type: String,
-		default: ''
-	},
-	price: {
-		type: String,
-		default: ''
-	}
-	//description:    { type: String, default: '' },
-	//picture:        { type: String, default: '' },   
 });
 
 // order schema should be created late on for order management

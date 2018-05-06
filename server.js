@@ -19,7 +19,7 @@ var	errorHandler = require('errorhandler');
 var	flash = require('connect-flash');
 
 // for routing
-var prods = require('./server/routes/prods');
+var ifttt = require('./server/routes/ifttt');
 // here we pass in passport as the param, so there is no need to require passport in auth.js
 // var auth = require('./server/routes/auth')(passport);
 // var paypal = require('./server/routes/paypal');
@@ -28,7 +28,7 @@ var app = express();
 const publicWeb = process.env.PUBLICWEB || './dist';
 
 // view engine setup
-// app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'dist'));
 
 mongoose.connect(config.db, {safe: true}, function(err) {
 	if(err) {
@@ -82,6 +82,7 @@ app.use('/', function(req, res, next) {
 	next();
 });
 */
+app.use('/ifttt/bea', ifttt);
 
 app.use(express.static(publicWeb));
 console.log(`serving ${publicWeb}`);
@@ -90,9 +91,9 @@ app.get('*', (req, res) => {
     res.sendFile(`index.html`, { root: publicWeb });
 });
 
+
 // router is mounted in a particular root url
 // app.use('/api/auth', auth);
-app.use('/api/prods', prods);
 // app.use('/paypal', paypal);
 
 // catch 404 and forward to error handler
