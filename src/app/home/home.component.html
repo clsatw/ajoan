@@ -2,7 +2,7 @@
 <mat-card>
 
   <mat-card-content>
-    <video #vid autoplay muted loop>
+    <video mat-card-image #vid autoplay muted loop>
       <source src='/assets/home.mp4' type='video/mp4'>
     </video>
   </mat-card-content>
@@ -13,5 +13,5 @@
     <p >I have also developed a mobile app that can control the robot car's speed, distant to wall & sensor reading frequency.</p>
     <p> You can operate it wherever a wifi connection is available. A camera will be attached to it soon.</p>
   </section>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <button id='myBtn' #myBtn (click)="playVideo()">Play</button>
 </div>

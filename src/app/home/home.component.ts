@@ -7,12 +7,23 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angula
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('vid') private vid: ElementRef;
+  @ViewChild('myBtn') private btn: ElementRef;
   constructor() { }
 
   ngOnInit() {
   }
 
+  playVideo() {
+    if (this.vid.nativeElement.paused) {
+      this.vid.nativeElement.play();
+      this.btn.nativeElement.innerText = 'Pause';
+    } else {
+      this.vid.nativeElement.pause();
+      this.btn.nativeElement.innerText = 'Play';
+    }
+  }
+
   ngAfterViewInit(): void {
-    // this.vid.nativeElement.play();
+    //
   }
 }
