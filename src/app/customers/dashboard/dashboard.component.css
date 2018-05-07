@@ -66,6 +66,7 @@
     color: #252627;
   }
 
+  /*
 .db-card {
   margin: 0px;
   position: absolute;
@@ -84,15 +85,11 @@ p {
   font-size:2vw;
 }
 
-.container { 
-  margin: 1em;
-}
-
 .dashboard-card {
   margin: 1em;
   position: absolute;
   max-width: 100%;
-  /* min-height: 100%; */
+ 
   top: 0px;
   left: 0px;
   right: 0px;
@@ -102,3 +99,13 @@ p {
 image{
   background-size: cover;
 }
+*/
+.db {
+  margin: 1em;
+}
+img { 
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+img:hover {opacity: 0.7;}

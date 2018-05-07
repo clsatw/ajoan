@@ -19,25 +19,36 @@
     </div>
   </a>
 </div>
--->
 
-<div class="container" >
-
-  <mat-grid-list [cols]='breakpoint' gutterSize='8px' rowHeight="10px">
-    <mat-grid-tile
-     *ngFor='let prod of prods|async'
-      routerLink="/products/detail/{{prod.id}}"
-
-      [colspan]='prod.col' [rowspan]='prod.row*ratio'>
-
+<div class="container-fluid">
+  
+  <mat-grid-list [cols]='4' gutterSize='6px' rowHeight="10px">
+    <mat-grid-tile *ngFor='let prod of prods|async' routerLink="/products/detail/{{prod.id}}" [colspan]='prod.col' [rowspan]='prod.row*ratio'>
+      
       <mat-card class='dashboard-card'>
-        <img mat-card-image width='336' height='auto' src={{prod.pixUrl}}>
-        <mat-card-footer >
+        <img mat-card-image width='336' height='auto' width='336' height='448' ={{prod.pixUrl}}>
+        <mat-card-footer>
           <p class='mat-typography'>{{prod.name}}</p>
         </mat-card-footer>
       </mat-card>
-
+      
     </mat-grid-tile>
   </mat-grid-list>
+  
+</div>
+
+-->
+<div class='db card-deck'>
+
+  <div *ngFor='let prod of prods|async' routerLink="/products/detail/{{prod.id}}">
+  <div class='card' style=" border-radius: 5px; border:2px solid lightblue">
+    <img class='img-fluid' width='326' height="448" src={{prod.pixUrl}}>
+    <div class='card-footer'>
+        <small class="text-muted">{{prod.name}}</small>
+    </div>
+  </div>
+  </div>
 
 </div>
+
+

@@ -13,18 +13,6 @@ export const PRODS: Prod[] = [
     row: 25,
     pixUrl: '/assets/waterpump.png'
   },
-
-  {
-    id: 2,
-    name: '雲端 遙控/自走避障車 (手控模式)',
-    desc: `可經由 Android/iPhone app 在任何地方透過 wifi 遙控，並可及時調整車速
-    , 離前方障礙物最近容許距離, 和多久讀取sensors一次。`,
-    url1: '/assets/manual-mode1-s.mp4',
-    url2: '/assets/manual-mode2-s.mp4',
-    col: 1,
-    row: 25,
-    pixUrl: '/assets/autopilot.png'
-  },
   {
     id: 3,
     // tslint:disable-next-line:quotemark
@@ -89,6 +77,13 @@ export const PRODS: Prod[] = [
     pixUrl: '/assets/dht1.png'
   },
   {
+    id: 10, name: 'robot with camera',
+    desc: '開發中...',
+    col: 1,
+    row: 25,
+    pixUrl: '/assets/car.png'
+  },
+  {
     id: 9,
     name: 'Iot 按紐',
     desc: '開發中...',
@@ -97,10 +92,14 @@ export const PRODS: Prod[] = [
     pixUrl: '/assets/dht.png'
   },
   {
-    id: 10, name: 'robot with camera',
-    desc: '開發中...',
+    id: 2,
+    name: '雲端 遙控/自走避障車 (手控模式)',
+    desc: `可經由 Android/iPhone app 在任何地方透過 wifi 遙控，並可及時調整車速
+    , 離前方障礙物最近容許距離, 和多久讀取sensors一次。`,
+    url1: '/assets/manual-mode1-s.mp4',
+    url2: '/assets/manual-mode2-s.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/car.png'
-  }
+    pixUrl: '/assets/autopilot.png'
+  },
 ];

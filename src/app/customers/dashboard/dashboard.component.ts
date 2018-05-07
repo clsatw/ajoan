@@ -16,19 +16,21 @@ export class DashboardComponent implements OnInit {
   prods: Observable<Prod[]>;
   selectedProd: Prod;
   breakpoint: number;
-  ratio: number;
+  ratio = 1;
   constructor(private prodService: ProdService) { }
 
   ngOnInit() {
     this.breakpoint = (window.innerWidth <= 400) ? 1 : 4;
-    this.ratio = window.innerHeight / 1280;
+    // this.ratio = window.innerHeight / 1280;
     gtag('event', 'view_item_list');
     this.getProds();
   }
   onResize(event) {
+    /*
     this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 4;
     this.ratio = event.target.innerHeight / 1280;
     this.ratio = Math.floor(this.ratio * 10) / 10;
+    */
   }
 
   onSelect(prod: Prod): void {
