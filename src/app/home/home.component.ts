@@ -13,6 +13,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.vid.nativeElement.play();
+    // this.vid.nativeElement.play();
   }
 }
