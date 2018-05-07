@@ -23,7 +23,7 @@ export const PRODS: Prod[] = [
     url2: '/assets/auto-mode2-m.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/roachbot.jpg'
+    pixUrl: '/assets/car1.png'
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const PRODS: Prod[] = [
     desc: 'echo, turn on tv. Videos will be uploaded soon.',
     col: 1,
     row: 25,
-    pixUrl: '/assets/girl.png'
+    pixUrl: '/assets/cat.png'
   },
   {
     id: 6,
@@ -100,6 +100,6 @@ export const PRODS: Prod[] = [
     url2: '/assets/manual-mode2-s.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/autopilot.png'
+    pixUrl: '/assets/app.png'
   },
 ];

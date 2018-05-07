@@ -36,8 +36,8 @@
     background-color:#ff7e00;
     border-radius: 2px;
   }
-  
-  
+
+
   .grid-pad {
     padding: 10px 0;
     margin: 2em;
@@ -65,12 +65,57 @@
     cursor: pointer;
     color: #252627;
   }
+  .card-deck span {
+    display: none;
+}
+
+@media (min-width:1200px){
+  .card-deck span:nth-of-type(5n) {
+    display: block;
+    width: 100%;
+  }
+
+}
+@media (min-width:992px) and (max-width: 1199px) {
+ .card-deck span:nth-of-type(4n) {
+    display: block;
+    width: 100%;
+  }
+
+}
+@media (min-width:768px) and (max-width: 991px) {
+  .card-deck span:nth-of-type(3n) {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .card-deck span:nth-of-type(2n) {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* add css for margin fix -- this will not be needed after beta */
+.card-deck .card {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-deck .card:not(:last-child) {
+  margin-right: 15px;
+}
+
+.card-deck .card:not(:first-child) {
+  margin-left: 15px;
+}
 
   /*
 .db-card {
   margin: 0px;
   position: absolute;
-  
+
   min-width: 100%;
   min-height: 100%;
   top: 0px;
@@ -89,7 +134,7 @@ p {
   margin: 1em;
   position: absolute;
   max-width: 100%;
- 
+
   top: 0px;
   left: 0px;
   right: 0px;
@@ -103,7 +148,7 @@ image{
 .db {
   margin: 1em;
 }
-img { 
+img {
   cursor: pointer;
   transition: 0.3s;
 }
