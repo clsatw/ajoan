@@ -36,3 +36,7 @@ node index
 ng g m shared
 make all feature modules import SharedModule
 
+how to deploy the site:
+    ng buid --prod
+    mon
+    pm2 start server.js

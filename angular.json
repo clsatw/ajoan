@@ -135,7 +135,11 @@
       }
     }
   },
-  "cli": {},
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    }
+  },
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
