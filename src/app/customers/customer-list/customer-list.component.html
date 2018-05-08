@@ -72,21 +72,23 @@
         </mat-menu>
       </mat-card-header>
 
-      <video mat-card-image  autoplay loop>
+      <video width='854' height='480' mat-card-image autoplay loop>
         <source src={{prod.url1}} type='video/mp4'>
       </video>
-      <video  mat-card-image autoplay loop>
+      <hr>
+      <video mat-card-image autoplay loop>
         <source src={{prod.url2}} type='video/mp4'>
       </video>
       <mat-card-content>
-
-
         <p class='mat-h4'>{{prod.desc}}</p>
-
       </mat-card-content>
       <mat-card-actions>
-        <button mat-mini-fab><mat-icon>thumb_up</mat-icon></button>&nbsp;
-        <button mat-mini-fab color='primary'><mat-icon>share</mat-icon></button>
+        <button mat-mini-fab>
+          <mat-icon>thumb_up</mat-icon>
+        </button>&nbsp;
+        <button mat-mini-fab color='primary'>
+          <mat-icon>share</mat-icon>
+        </button>
       </mat-card-actions>
       <mat-card-footer class='mat-body-2'>
         <a href='https://ifttt.com/discover'>click on here to learn more about IFTTT</a>

@@ -41,10 +41,10 @@
 <div class='db card-deck'>
 
   <div *ngFor='let prod of prods|async' routerLink="/products/detail/{{prod.id}}">
-  <div class='card mb-4' style=" border-radius: 5px; border:2px solid lightblue">
+  <div class='shadow p-3 mb-5 bg-white rounded card mb-4 border-light rounded' >
     <img  class="card-img-top " widt='210' height='150' src={{prod.pixUrl}}>
     <div class='card-footer'>
-        <small class="text-muted">{{prod.name}}</small>
+        <small class="text-weigth-bold text-center text-mute">{{prod.name}}</small>
     </div>
   </div>
   <span></span>
