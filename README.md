@@ -40,3 +40,19 @@ how to deploy the site:
     ng buid --prod
     mon
     pm2 start server.js
+
+
+to do lists:
+    1. amazon echo
+    2. ifttt news auto update on webiste site to enrich content.
+    2. follwer
+    3. camera
+    4. enable ftp service on mean server for dlink camera motion detector
+    5. beautify website
+    6. google analystics
+    7. esp8266 deep sleep
+    9. iot button
+    10. mDns for firmware update
+    11. iot bulb at home 
+    12  angular language service
+    13 nativescript

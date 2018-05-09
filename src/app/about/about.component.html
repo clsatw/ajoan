@@ -1,38 +1,94 @@
+<!--
 <div class='container'>
-    <mat-toolbar>
-        <mat-toolbar-row>
-          <span>First Row</span>
-        </mat-toolbar-row>
-        <mat-toolbar-row>
-          <span>Second Row</span>
-        </mat-toolbar-row>
-      </mat-toolbar>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <span>First Row</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <span>Second Row</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+-->
+<!--
+    <mat-toolbar color="primary">
+    <span>Application Title</span>
 
-      <mat-toolbar color="primary">
-          <span>Application Title</span>
+    This fills the remaining space of the current row 
+    <span class="example-fill-remaining-space"></span>
 
-          <!-- This fills the remaining space of the current row -->
-          <span class="example-fill-remaining-space"></span>
+    <span>Right Aligned Text</span>
+  </mat-toolbar>
+-->
+<div class='about-container'>
+  <mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        研究
+        <em>動機</em>
+      </ng-template>
+      <h1>Advances of Iot ecosystem and
+        <a href='https://en.wikipedia.org/wiki/ESP8266'>ESP8266</a> on the market</h1>
+      <p>The advances of Iot helps developers to control and read data from internet connected devices from anywhere becomes
+        more earily. 
+        <p>A few years ago, I built a bluetooth controlled robot car with arduino, but at that time i didn't have
+        enough knowledge to make an internet controlled robot car until I saw esp8266 chip on the Net last year.</p>
+        <p> It feautres wifi and gpio and is very cheap (~Nt$80); thefore, i started my Iot weekend projects.</p>
+    </mat-tab>
 
-          <span>Right Aligned Text</span>
-        </mat-toolbar>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon></mat-icon>研究
+        <em>目的</em>
+      </ng-template>
+      <h1>To implement home automation at low cost</h1>
+      <p>Saving energy can not only help the environment but also save us money.</p>
+      <p>The chip can be programmed like any other Arduino device, which is very convinience for me to set up home automation/surveilance to try save energy as
+        much as possible.
+      </p>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>thumb_up</mat-icon> 研究
+        <em>方法</em>
+      </ng-template>
+      <h1>Iot question 101: How to access devices from anywhere?</h1>
+      <p>It is easy to connect esp8266 devcies to the net; however, there are some questions need to be resolved:</p>
+      <mat-list>
+        <mat-list-item>
+          1) Usually we hard code ssid and password to the devie for wifi connection. What if we take it to somewhere else or we change
+          our router's ssid or password?
+        </mat-list-item>
+        <mat-list-item>
+          2) The device will be assigned a dynamce private ip adress by DHCP and doesn't have a DNS name after connection. How can
+          we acess it from the net?
+        </mat-list-item>
+        <mat-list-item>
+          3) How can i trigger an event for the device to take action. e.g, i want the device to turn on/off aquarium waterpump at
+          a certain time.
+        </mat-list-item>
+        <mat-list-item>
+          4) Last but not least, we need to put the device into sleeping mode to save power.
+        </mat-list-item>
+      </mat-list>
+      <mat-divider mat-inset></mat-divider>
+      <h2>Something to the rescue </h2>
+      <p>After studying and pulling most my hair out, the follwoing methods are implemented to solve the issues:
+        <mat-list>
+          <mat-list-item>
+            1) wifi manager library
+          </mat-list-item>
+          <mat-list-item>
+            2) MQTT
+          </mat-list-item>
+          <mat-list-item>
+            3) IFTTT
+          </mat-list-item>
+          <mat-list-item>
+            4) interrupt and deep_sleep mode in arduion
+          </mat-list-item>
+        </mat-list>
 
-        <mat-tab-group>
-            <mat-tab>
-              <ng-template mat-tab-label>
-                The <em>best</em> pasta
-              </ng-template>
-              <h1>Best pasta restaurants</h1>
-              <p>...</p>
-            </mat-tab>
-            <mat-tab>
-
-              <ng-template mat-tab-label>
-                <mat-icon>thumb_down</mat-icon> The worst sushi
-              </ng-template>
-              <h1>Terrible sushi restaurants</h1>
-              <p>...</p>
-            </mat-tab>
-          </mat-tab-group>
+      </p>
+    </mat-tab>
+  </mat-tab-group>
 </div>
-

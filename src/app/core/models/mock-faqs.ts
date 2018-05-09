@@ -17,7 +17,7 @@ export const FAQS: Faq[] = [
     aUrl: '/assets/Esp8266Wifi.mp4'
   },
   {
-    q: 'Why my roachBot not moving as expected or not listening to my control?',
+    q: 'Why my roachBot not moving as expected or not listening to my instructions?',
     answers: [
       'Please try replacing batteries if it has been running for more than an hour.'
     ]
