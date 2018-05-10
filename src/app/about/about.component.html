@@ -27,8 +27,9 @@
         <em>動機</em>
       </ng-template>
       <h1>Advances of Iot ecosystem and ESP8266 on the market</h1>
-      <p class='mat-body-1'>Aadvances of Iot helps developers to control and read data from internet connected devices from anywhere becomes more
+      <p class='mat-h2'>Aadvances of Iot helps developers to access internet connected devices from anywhere becomes more
         earily.
+        <section class='mat-h3'>
         <p>I bought a
           <a href='https://www.parallax.com/product/boe-bot-robot'> Boe-Bot robot kit </a> from Parallax inc a few years ago. It was bluetooth controlled. Although I was keen to have
           it wifi controlled at that time, but I hadn't have enough knowledge to accomplish the goal until I saw
@@ -36,6 +37,7 @@
             ESP8266 </a>
           chip on the Net last year.</p>
         <p> The chip feautres with wifi and gpio and is inexpensive (~Nt$80), so I'm starting my Iot weekend projects.</p>
+        </section>
     </mat-tab>
 
     <mat-tab>
@@ -44,10 +46,12 @@
         <em>目的</em>
       </ng-template>
       <h1>To implement home automation & surveilance at low cost</h1>
-      <p class='mat-body-1'>Saving energy can not only help the environment but also save us money.</p>
+      <p class='mat-h2'>Saving energy can not only help the environment but also save us money.</p>
+      <section class='mat-h3'>
       <p>The chip can be programmed like any other Arduino device, which is very convinience for me to set up home automation/surveilance
         to try save energy as much as possible.
       </p>
+      </section>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
@@ -55,7 +59,8 @@
         <em>方法</em>
       </ng-template>
       <h1>Iot question 101: How to access devices from anywhere?</h1>
-      <p class='mat-body-1'>It is easy to connect esp8266 devcies to the net; however, there are some problems need to be resolved:</p>
+      <p class='mat-h2'>It is easy to connect esp8266 devcies to the net; however, there are some problems need to be resolved:</p>
+      <section class='mat-h3'>
       <ul>
         <li>
           When programming, we usually hard code ssid and password to the devie for wifi connection, but what if we take it to somewhere
@@ -73,11 +78,12 @@
           Last but not least, we need to put the device into sleeping mode to save power.
         </li>
       </ul>
-
+      </section>
       <mat-divider mat-inset></mat-divider>
-      <h2>Something to the rescue </h2>
-      <p class='mat-body-1'>After studying and pulling most my hair out, the follwoing methods are implemented to solve the issues:</p>
-      <ul>
+      <h1>Something to the rescue </h1>
+      <p class='mat-h2'>After studying and pulling most my hair out, the follwoing methods are implemented to solve the issues:</p>
+      <section class='mat-h3'>
+              <ul>
         <li>
           3rd party wifi manager library
         </li>
@@ -89,9 +95,10 @@
         </li>
         <li> interrupt and deep_sleep mode in arduion</li>
       </ul>
+      </section>
     </mat-tab>
   </mat-tab-group>
-  <mat-divider></mat-divider>
+
   <hr>
 
   <footer>
