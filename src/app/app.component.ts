@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router} from '@angular/router';
 import { distinctUntilChanged } from 'rxjs/operators';
 
 declare let gtag: Function;
@@ -10,6 +10,7 @@ declare let gtag: Function;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
   constructor(private router: Router) {}
 
   ngOnInit() {

@@ -27,8 +27,10 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
+  // {path: '**',
+  // loadChildren: 'app/PageNotFound.module#PageNotFoundModule}
 ];
-
+// {enableTracing: true}
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

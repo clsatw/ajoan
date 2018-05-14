@@ -27,6 +27,12 @@
       </button>
       <span>My weekend projects</span>
     </mat-toolbar>
+    
+    <!-- add spinner automatically for anyslow  rout -->
+    <span class='glyphicon glyphicon-refresh glyphicon-spin spinner'
+      *ngIf='loading'></span>
+
     <router-outlet></router-outlet>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
