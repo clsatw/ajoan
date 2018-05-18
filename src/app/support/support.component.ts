@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Faq } from '../core/models/faq';
-import { FAQS } from '../core/models/mock-faqs';
+import { Faq } from 'app/core/models/faq';
+import { FAQS } from 'app/core/models/mock-faqs';
 
 @Component({
   selector: 'app-support',

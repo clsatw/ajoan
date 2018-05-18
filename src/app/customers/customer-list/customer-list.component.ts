@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 // import { createRandomCatalog } from '../../core/models/mock-data';
-import { Prod } from '../../core/models/prod';
-import { ProdService } from '../../prod.service';
+import { Prod } from 'app/core/models/prod';
+import { ProdService } from 'app/prod.service';
 
 // for google analytics
 declare let gtag: Function;

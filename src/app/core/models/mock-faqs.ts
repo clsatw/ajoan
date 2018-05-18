@@ -1,4 +1,4 @@
-import { Faq } from './faq';
+import { Faq } from 'app/core/models/faq';
 
 export const FAQS: Faq[] = [
   {

@@ -8,20 +8,20 @@
 -->
 <div class='container'>
   <mat-nav-list>
-    <h2 class=mat-h2>Questions:</h2>
+    <h2 class=mat-h2 i18n>Questions:</h2>
     <mat-list-item *ngFor="let faq of faqs" [class.selected]="faq === selectedFaq" (click)='onSelect(faq)'>
-      {{faq.q}}
+      <p i18n>{{faq.q}}</p>
     </mat-list-item>
   </mat-nav-list>
 
   <mat-divider></mat-divider>
 
   <div *ngIf='selectedFaq'>
-    <h2 class=mat-h2>Answer:</h2>
+    <h2 class=mat-h2 i18n>Answer:</h2>
 
     <ul>
       <li *ngFor='let a of selectedFaq.answers'>
-        <h4 class='mat-body-2' matLine>{{a}}</h4>
+        <h4 class='mat-body-2' matLine i18n>{{a}}</h4>
       </li>
     </ul>
 

@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
 import { catchError, map, tap } from 'rxjs/operators';
 import { of, Observable } from 'rxjs';
 
-import { Prod } from './core/models/prod';
-import { PRODS } from './core/models/mock-prods';
+import { Prod } from 'app/core/models/prod';
+import { PRODS } from 'app/core/models/mock-prods';
 import { MatSnackBar } from '@angular/material';
 
 @Injectable({

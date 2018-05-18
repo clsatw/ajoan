@@ -49,6 +49,28 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
+            },
+            "zh-hant": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "outputPath": "dist/zh-hant/",
+              "i18nFile": "src/locale/messages.zh-hant.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh-hant",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -60,6 +82,9 @@
           "configurations": {
             "production": {
               "browserTarget": "customer-app:build:production"
+            },
+            "zh-hant": {
+              "browserTarget": "customer-app:build:zh-hant"
             }
           }
         },

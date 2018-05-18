@@ -1,0 +1,8 @@
+<!-- <p>Current: {{ locale }}</p> -->
+
+<span *ngFor="let locale of locales">
+  
+    <a href= "/{{locale.code}}/"> {{ locale.code }}</a>
+ 
+  <span *ngIf="locale.code === localeId">{{locale.text}} </span>
+</span>

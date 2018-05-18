@@ -1,4 +1,4 @@
-import { Prod } from './prod';
+import { Prod } from 'app/core/models/prod';
 
 export const PRODS: Prod[] = [
   {
@@ -7,22 +7,22 @@ export const PRODS: Prod[] = [
     desc: `支援 IFTTT (If This, Then That).
      本例中利用 IFTTT 雲端服務, 每天於 9: 30 PM 啓動馬達為給魚缸打氣.
      你可自行在 IFTTT 網站設定啓動及関閉時間.`,
-    url1: '/assets/waterpump1.mp4',
-    url2: '/assets/waterpump-m.mp4',
+    url1: 'assets/waterpump1.mp4',
+    url2: 'assets/waterpump-m.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/waterpump.png'
+    pixUrl: 'assets/waterpump.png'
   },
   {
     id: 2,
     name: '雲端 遙控/自走避障車 (手控模式)',
     desc: `可經由 Android/iPhone app 在任何地方透過 wifi 遙控，並可及時調整車速
     , 離前方障礙物最近容許距離, 和多久讀取sensors一次。`,
-    url1: '/assets/manual-mode1-s.mp4',
-    url2: '/assets/manual-mode2-s.mp4',
+    url1: 'assets/manual-mode1-s.mp4',
+    url2: 'assets/manual-mode2-s.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/app.png'
+    pixUrl: 'assets/app.png'
   },
   {
     id: 3,
@@ -30,11 +30,11 @@ export const PRODS: Prod[] = [
     name: "雲端 遙控/自走避障車 (自走模式)",
     desc: `可經由 Android/iPhone app 在任何地方透過 wifi 遙控，並可及時調整車速
     , 離前方障礙物最近容許距離, 和多久讀取sensors一次。`,
-    url1: '/assets/auto-mode1-b.mp4',
-    url2: '/assets/auto-mode2-m.mp4',
+    url1: 'assets/auto-mode1-b.mp4',
+    url2: 'assets/auto-mode2-m.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/car1.png'
+    pixUrl: 'assets/car1.png'
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const PRODS: Prod[] = [
     // url2: "/assets/auto-mode2-m.mp4"
     col: 1,
     row: 25,
-    pixUrl: '/assets/dolls.png'
+    pixUrl: 'assets/dolls.png'
   },
   {
     id: 5,
@@ -54,18 +54,18 @@ export const PRODS: Prod[] = [
     desc: 'echo, turn on tv. Videos will be uploaded soon.',
     col: 1,
     row: 25,
-    pixUrl: '/assets/cat.png'
+    pixUrl: 'assets/cat.png'
   },
   {
     id: 6,
     name: '雲端 情境自動變色LED',
     desc: `設定的事件發生時，turn on LED 燈，其顔色根據不同的事件變換。
       希望能對聼障同胞有幫助。`,
-    url1: '/assets/led1.mp4',
-    url2: '/assets/led-m.mp4',
+    url1: 'assets/led1.mp4',
+    url2: 'assets/led-m.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/led.png',
+    pixUrl: 'assets/led.png',
   },
   {
     id: 7,
@@ -73,26 +73,26 @@ export const PRODS: Prod[] = [
     desc: `門窗被打開時, 自動送出簡訊, mobile notification, 及 email 通知.`,
     col: 1,
     row: 25,
-    url1: '/assets/door_open.mp4',
-    url2: '/assets/door2.mp4',
-    pixUrl: '/assets/door.png'
+    url1: 'assets/door_open.mp4',
+    url2: 'assets/door2.mp4',
+    pixUrl: 'assets/door.png'
   },
   {
     id: 8,
     name: '雲端 溫濕度感應器',
     desc: `dht`,
-    url1: '/assets/dht.mp4',
-    url2: '/assets/dht1.mp4',
+    url1: 'assets/dht.mp4',
+    url2: 'assets/dht1.mp4',
     col: 1,
     row: 25,
-    pixUrl: '/assets/dht1.png'
+    pixUrl: 'assets/dht1.png'
   },
   {
     id: 10, name: 'robot with camera',
     desc: '開發中...',
     col: 1,
     row: 25,
-    pixUrl: '/assets/camera.png'
+    pixUrl: 'assets/camera.png'
   },
   {
     id: 9,
@@ -100,7 +100,7 @@ export const PRODS: Prod[] = [
     desc: '開發中...',
     col: 1,
     row: 25,
-    pixUrl: '/assets/dht.png'
+    pixUrl: 'assets/dht.png'
   },
 
 ];

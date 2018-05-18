@@ -1,0 +1,144 @@
+// set NODE_ENV environment variable at cmd prompt. e.g., set NODE_ENV = production
+// port defined in server/config/env/*.js file
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';	// has to be before config coz config reads it
+var config = require('./server/config/config');
+const express = require('express');
+const morgan = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const compress = require('compression');
+const mongoose = require('mongoose');
+// may be i should use multer - figure it out later
+//methodOverride = require('method-override'),
+const session = require('express-session');
+// var	passport = require('passport');
+const path = require('path');
+const locale = require('locale');
+const favicon = require('serve-favicon');
+const errorHandler = require('errorhandler');
+const flash = require('connect-flash');
+const supportedLocales = ['en', 'zh-hant', 'zh-hans'];
+
+// for routing
+const ifttt = require('./server/routes/ifttt');
+const waterPump = require('./server/routes/esp8266');
+// here we pass in passport as the param, so there is no need to require passport in auth.js
+// var auth = require('./server/routes/auth')(passport);
+// var paypal = require('./server/routes/paypal');
+
+let app = express();
+const publicWeb = process.env.PUBLICWEB || './dist';
+
+mongoose.connect(config.db, { safe: true }, function (err) {
+  if (err) {
+    console.error('connection error', err);
+  } else {
+    console.log('connection successful');
+  }
+});
+
+//require('./server/config/strategies/passport')(passport); // pass passport for configuration
+// Parsing environment variables
+// var options = {};
+app.use(compress());
+
+if (process.env.NODE_ENV === 'development') {
+  // logging request details
+  app.use(morgan('dev'));
+  app.use(errorHandler());
+} 
+
+
+// define middleware
+// app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(cookieParser()); // read cookie (needed for auth)
+app.use(bodyParser.urlencoded({ extended: false }));	// get info form htlm form
+app.use(bodyParser.json());
+//app.use(methodOverride());
+
+app.use(session({
+  saveUninitialized: true,
+  resave: true,
+  secret: config.sessionSecret
+}));
+// uncomment after placing your favicon in /public
+// app.use(facicon(__dirname + '/public/favicon.ico'));
+
+// required for passport
+// app.use(passport.initialize());
+// app.use(passport.session()); // persistent login sessions
+// init passport
+// var initPassport = require('./server/config/strategies/passport-init');
+// initPassport(passport);
+// use connect-flash for flash msg stored in session
+app.use(flash());
+
+/*
+app.use('/', express.static(path.join(__dirname, 'public')));
+// telling browser to cache it
+app.use('/', function(req, res, next) {
+	res.setHeader('Cache-Control', 'public, max-age=31536000');
+	next();
+});
+*/
+app.use('/ifttt/bea', ifttt);
+app.use('/esp8266/', waterPump)
+
+// app.use(express.static(`${__dirname}/${publicWeb}`));
+/* path that you provide to the express.static function is relative to the directory from where
+** you launch your node process
+*/
+// view engine setup
+app.set('views', path.join(__dirname, publicWeb));
+app.use(express.static(publicWeb+'/zh-hant/'));
+
+// Detect locale and determine best match
+app.use(locale(supportedLocales));
+
+// Return index.html for all GET requests for PathLocationStrategy
+// And accept locale style URLs: /en/example
+app.get('/', (req, res) => {
+  const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
+  const locale = matches && supportedLocales.indexOf(matches[1]) !== -1 ? matches[1] : req.locale;
+  console.log(locale);
+  res.sendFile(path.join(__dirname, './dist', '/zh-hant/index.html'));
+  // res.sendFile('index.html', { root: `${publicWeb}/${locale}/index.html`});
+});
+
+
+// router is mounted in a particular root url
+// app.use('/api/auth', auth);
+// app.use('/paypal', paypal);
+
+// catch 404 and forward to error handler
+app.use(function (req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+  app.use(function (err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
+
+app.listen(config.port, function (req, res) {
+  console.info('Server running at http://localhost: ' + config.port);
+});

@@ -1,4 +1,4 @@
-import { SupportModule } from './support.module';
+import { SupportModule } from 'app/support/support.module';
 
 describe('SupportModule', () => {
   let supportModule: SupportModule;

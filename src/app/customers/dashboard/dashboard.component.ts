@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Prod } from '../../core/models/prod';
-import { ProdService } from '../../prod.service';
+import { Prod } from 'app/core/models/prod';
+import { ProdService } from 'app/prod.service';
 import { Observable } from 'rxjs';
 import { Breakpoints } from '@angular/cdk/layout';
 

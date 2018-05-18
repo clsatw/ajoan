@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SupportRoutingModule } from './support-routing.module';
-import { SupportComponent } from './support.component';
-import { SharedModule } from '../shared/shared.module';
+import { SupportRoutingModule } from 'app/support/support-routing.module';
+import { SupportComponent } from 'app/support/support.component';
+import { SharedModule } from 'app/shared/shared.module';
 
 @NgModule({
   imports: [

@@ -50,9 +50,19 @@ to do lists:
     4. enable ftp service on mean server for dlink camera motion detector
     5. beautify website
     6. google analystics
-    7. esp8266 deep sleep
+    7. esp8266 deep sleep 
     9. iot button
     10. mDns for firmware update
     11. iot bulb at home 
-    12  angular language service
+    12  angular language service -- done
     13 nativescript
+
+    https://medium.com/@intellix/production-ready-angular-cli-v1-0-0-with-i18n-and-localised-urls-1f3cf16cc204
+    // i18n - internationization
+    0. add <i18n='@@xxx'> for texts that will displayed in different languages in all html files (must do all html at a time)
+    1. ng xi18n --outputPath=src/locale or npm run extract to create a en-us messages.xlf file on locale folder
+    2. copy the xlf file to messages.zh-hant.xlf (for tranditional chinese)
+    3. edit messages.zh-hant.xlf by adding <target> tags below <source> tags
+    4. npm run build and npm run build:zh-hant to generate output on /dist and /dist/zh-hant
+    5. amend server.js to enable locale and render index.html under /dist base on locale
+    6. node server.js 

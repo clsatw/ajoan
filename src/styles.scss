@@ -6,7 +6,7 @@
 */
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: normal;
   margin: 0em;
   color: #888;
@@ -28,5 +28,24 @@ h4 {
 .container {
   margin: 2em;
 }
+
+.white-text{
+  color:#FFF!important;
+}
+
+.background-accent-color{
+  background-color: #ff4081!important;  
+}
+.background-primary-color{
+  color:#3f51b5!important;
+}
+
+.primaty-color{
+  color: #3f51b5!important;
+}
+.accent-color{
+  color: #ff4081!important;
+}
+
 
 /* everywhere else */

@@ -1,36 +1,49 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport="true"
-    [attr.role]="isHandset ? 'dialog' : 'navigation'"
-    [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="isHandset ? 'dialog' : 'navigation'" [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
     [opened]="!(isHandset | async)!.matches">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/home"><mat-icon>home</mat-icon>&nbsp;Home</a>
-      <a mat-list-item routerLink="/products"><mat-icon>dashboard</mat-icon>&nbsp;Projects</a>
-      <a mat-list-item routerLink="/orders"><mat-icon>shopping cart</mat-icon>&nbsp;Orders</a>
-      <a mat-list-item routerLink="/support"><mat-icon>help</mat-icon>&nbsp;Support</a>
-      <a mat-list-item routerLink="/about"><mat-icon>face</mat-icon>&nbsp;About me</a>
+      <a mat-list-item routerLink="/home">
+        <mat-icon>home</mat-icon>&nbsp;Home</a>
+      <a mat-list-item routerLink="/products">
+        <mat-icon>dashboard</mat-icon>&nbsp;
+        <p i18n="@@menuP">Projects</p>
+      </a>
+      <a mat-list-item routerLink="/orders">
+        <mat-icon>shopping cart</mat-icon>&nbsp;Orders</a>
+      <a mat-list-item routerLink="/support">
+        <mat-icon>help</mat-icon>&nbsp;
+        <p i18n="@@menuH">Support</p>
+      </a>
+      <a mat-list-item routerLink="/about">
+        <mat-icon>face</mat-icon>&nbsp;
+        <p i18n="@@menuA">About me</p>
+      </a>
+
+      <mat-divider></mat-divider>
+
+      <h3 mat-subheader i18n="subheader in sidenav for interface languages">
+          <mat-icon color="warn">g-translate</mat-icon>
+      </h3>         
+      <ng-template ngFor let-locale [ngForOf]= 'locales'>        
+        <a mat-list-item *ngIf="locale.code !== localeId" href="/{{locale.code}}/">
+          {{locale.text}}</a>
+        <mat-list-item *ngIf="locale.code === localeId">{{locale.text}}</mat-list-item>
+      </ng-template>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="(isHandset | async)!.matches">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="(isHandset | async)!.matches">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>My weekend projects</span>
+      <span i18n>My weekend projects</span>
     </mat-toolbar>
-    
+
     <!-- add spinner automatically for anyslow  rout -->
-    <span class='glyphicon glyphicon-refresh glyphicon-spin spinner'
-      *ngIf='loading'></span>
+    <span class='glyphicon glyphicon-refresh glyphicon-spin spinner' *ngIf='loading'></span>
+
+    <app-language-switcher></app-language-switcher>
 
     <router-outlet></router-outlet>
 

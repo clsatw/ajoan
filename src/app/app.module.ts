@@ -1,19 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Inject, InjectionToken } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
-import { AppMainNavComponent } from './app-main-nav/app-main-nav.component';
-import { AppComponent } from './app.component';
-import { environment } from './core/environment.prod';
-import { CoreModule } from './core/core.module';
-import { ProdService } from './prod.service';
+import { AppRoutingModule } from 'app/app-routing.module';
+import { AppMainNavComponent } from 'app/app-main-nav/app-main-nav.component';
+import { AppComponent } from 'app/app.component';
+import { environment } from 'app/core/environment.prod';
+import { CoreModule } from 'app/core/core.module';
+import { ProdService } from 'app/prod.service';
+import { LanguageSwitcherComponent } from 'app/language-switcher/language-switcher.component';
 
-// 步驟 1
+// 步驟 1 for google analytics
 export const EnvironmentToken = new InjectionToken('ENVIRONMENT');
 
 // 步驟 2
@@ -23,6 +24,7 @@ declare let gtag: Function;
   declarations: [
     AppComponent,
     AppMainNavComponent,
+    LanguageSwitcherComponent,
   ],
   imports: [
     BrowserModule,
