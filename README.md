@@ -63,6 +63,15 @@ to do lists:
     1. ng xi18n --outputPath=src/locale or npm run extract to create a en-us messages.xlf file on locale folder
     2. copy the xlf file to messages.zh-hant.xlf (for tranditional chinese)
     3. edit messages.zh-hant.xlf by adding <target> tags below <source> tags
-    4. npm run build and npm run build:zh-hant to generate output on /dist and /dist/zh-hant
-    5. amend server.js to enable locale and render index.html under /dist base on locale
-    6. node server.js 
+    4. npm run build and npm run build:zh-hant to generate output on /dist/en-US and /dist/zh-hant
+    5. amend server.js to enable locale and render index.html under /dist base on locale value
+        app.use('/zh-hant', express.static(path.join(__dirname, '/dist/zh-hant/')));
+        app.use('/en-US', express.static(path.join(__dirname, '/dist/en-US')));
+    6. modify index.html in /dist/en-US for <base href="/en-US/">; The same for index.html in      /dist/zh-hant. (this is the key for multi-language)
+    7. nodemon server.js
+
+
+    When you're deploying to non-root path within a domain, you'll need to manually update the <base href="/"> tag in your dist/index.html.
+    In this case, you will need to update to <base href="/zh-hant/"> for index.html in /dist/zh-hant. by the same token <base href='/en-US/> for index.html in /dist/en-US
+
+    server.js

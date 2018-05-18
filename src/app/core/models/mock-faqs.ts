@@ -14,7 +14,7 @@ export const FAQS: Faq[] = [
       'After connected, the Iot device is accessible on intenet.',
       'It is a one-off settings and will be auto connecting afterward.'
     ],
-    aUrl: '/assets/Esp8266Wifi.mp4'
+    aUrl: 'assets/Esp8266Wifi.mp4'
   },
   {
     q: 'Why my roachBot not moving as expected or not listening to my instructions?',
