@@ -24,8 +24,8 @@
 
       <h3 mat-subheader i18n="subheader in sidenav for interface languages">
           <mat-icon color="warn">g-translate</mat-icon>
-      </h3>         
-      <ng-template ngFor let-locale [ngForOf]= 'locales'>        
+      </h3>
+      <ng-template ngFor let-locale [ngForOf]= 'locales'>
         <a mat-list-item *ngIf="locale.code !== localeId" href="/{{locale.code}}/">
           {{locale.text}}</a>
         <mat-list-item *ngIf="locale.code === localeId">{{locale.text}}</mat-list-item>
@@ -37,15 +37,13 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="(isHandset | async)!.matches">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span i18n>My weekend projects</span>
+      <span i18n='@@myproj'>My weekend projects</span>
     </mat-toolbar>
 
-    <!-- add spinner automatically for anyslow  rout -->
+    <!-- add spinner automatically for any slow  rout -->
     <span class='glyphicon glyphicon-refresh glyphicon-spin spinner' *ngIf='loading'></span>
 
-    <app-language-switcher></app-language-switcher>
-
-    <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
 
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 // import { createRandomCatalog } from '../../core/models/mock-data';
 import { Prod } from 'app/core/models/prod';
 import { ProdService } from 'app/prod.service';
+import { N18iService } from 'app/services/n18i.service';
 
 // for google analytics
 declare let gtag: Function;
@@ -19,8 +20,8 @@ export class CustomerListComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
     private prodService: ProdService,
+    private n18iService: N18iService,
     private location: Location) {
-
   }
 
   ngOnInit() {
