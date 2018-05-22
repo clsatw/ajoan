@@ -1,6 +1,6 @@
 import { Faq } from 'app/core/models/faq';
 
-export const FAQS: Faq[] = [
+export const FAQS_EN: Faq[] = [
   {
     q: 'How to connect my devices to wifi?',
     answers: [
@@ -25,7 +25,7 @@ export const FAQS: Faq[] = [
   {
     q: 'What can I do with the Iot button?',
     answers: [
-      'The button can trigger the event(s) we have configured.',
+      'The button can trigger the event(s) we have specified.',
       'e.g, it can turn on the light at home when you press it at the office.',
       'or something likes sending a sms message to your phone when the button is pressed, etc.'
     ]

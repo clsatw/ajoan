@@ -71,12 +71,13 @@ app.use('/en-US', express.static(path.join(__dirname, '/dist/en-US')));
 // And accept locale style URLs: /en/example
 
 app.get('*', (req, res) => {
-  const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
-  const locale = matches && supportedLocales.indexOf(matches[1]) !== -1 ? matches[1] : req.locale;
-  
-  console.log(req.locale);
-  // app.use(express.static(path.join(__dirname, `/dist/${req.locale}/`)));
-  res.sendFile(path.join(__dirname, `/dist/${req.locale}/index.html`));
+  // const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
+  // const locale = matches && supportedLocales.indexOf(matches[1]) !== -1 ? matches[1] : req.locale;
+  let locale = req.locale === 'zh-hant'? req.locale: 'en-US';
+  console.log('you ask for: ', req.headers["accept-language"]); 
+  console.log('locale: ', locale);
+  // app.use(express.static(path.join(__dirname, `/dist/${locale}/`)));
+  res.sendFile(path.join(__dirname, `/dist/${locale}/index.html`));
 });
 
 

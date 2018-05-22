@@ -1,6 +1,6 @@
 import { Prod } from 'app/core/models/prod';
 
-export const PRODS: Prod[] = [
+export const PRODS_ZH_HANT: Prod[] = [
   {
     id: 1,
     name: 'IFTTT 雲端魚缸打水',

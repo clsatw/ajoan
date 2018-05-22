@@ -74,4 +74,3 @@ to do lists:
     When you're deploying to non-root path within a domain, you'll need to manually update the <base href="/"> tag in your dist/index.html.
     In this case, you will need to update to <base href="/zh-hant/"> for index.html in /dist/zh-hant. by the same token <base href='/en-US/> for index.html in /dist/en-US
 
-    server.js
