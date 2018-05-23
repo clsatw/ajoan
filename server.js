@@ -1,6 +1,6 @@
 // set NODE_ENV environment variable at cmd prompt. e.g., set NODE_ENV = production
 // port defined in server/config/env/*.js file
-process.env.NODE_ENV = process.env.NODE_ENV || 'development'; // has to be before config coz config reads it
+process.env.NODE_ENV = process.env.NODE_ENV || 'prod'; // has to be before config coz config reads it
 var config = require("./server/config/config");
 const express = require("express"),
   morgan = require("morgan"),
@@ -39,11 +39,11 @@ mongoose.connect(config.db, { safe: true }, function (err) {
 // Parsing environment variables
 // var options = {};
 
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "dev") {
   // logging request details
   app.use(morgan("dev"));
   app.use(errorHandler());
-} else if (process.env.NODE_ENV === "production") {
+} else if (process.env.NODE_ENV === "prod") {
   app.use(compress());
 }
 
@@ -81,7 +81,7 @@ app.get('*', (req, res) => {
 });
 
 
-app.listen(config.port, function (req, res) {
+app.listen(5000, function (req, res) {
   console.info("Server running at http://localhost: " + config.port);
 });
 
