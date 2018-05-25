@@ -8,7 +8,7 @@ var Prods = require('../models/prods.model');
 // returens router instanace which can be mounted as a middleware
 var router = express.Router();
 var bodyParser = require('body-parser');
-var parseUrlEncoded = bodyParser.urlencoded({ extended: false });
+var parseUrlEncoded = bodyParser.urlencoded({ extended: true });
 /*
 router.use(function(req, res, next){
 	//if(req.method === 'GET'){

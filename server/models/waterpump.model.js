@@ -1,11 +1,19 @@
 var mongoose = require('mongoose');
 
 var WaterPumpchema = mongoose.Schema({
-	action: {
-		type: String,
-		required: true,		
-		default: 'off'
+	action: {		
+		type: Boolean,		
+		default: false			
 	},
+	task:{
+		type: String,
+		unique: true,
+		default: 'aquarium'
+	},	
+	done: {
+		type: Boolean,
+		default: false
+	}
 });
 
 // order schema should be created late on for order management

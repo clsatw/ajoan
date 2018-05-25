@@ -13,23 +13,23 @@ var parseUrlEncoded = bodyParser.urlencoded({ extended: false });
 // the root path relative to the path where it's mounted.
 router.route('/')
 	// get all the users when a method passed is GET
-  .get(function (req, res) {
-    console.log('water pump get');
-		WaterPump.find(function(err, data) {
+	.get(function (req, res) {
+		console.log('water pump get');
+		WaterPump.find(function (err, data) {
 			if (err)
 				res.status(500).send(err);
 			res.status(200).json(data);
 		})
 	})
 	// create a prod when the method passed is POST
-  .post(parseUrlEncoded, function (req, res) {
-    console.log(req.body);
+	.post(parseUrlEncoded, function (req, res) {
+		console.log(req.body);
 		// create a new instance of the user model
 		// it should be req.body not req.data as there is no data property in req object
 		var data = new WaterPump(req.body); // WaterPump is a schema constructor
 
 		// save the data received
-		data.save(function(err) {
+		data.save(function (err) {
 			if (err) {
 				console.log(err);
 				return res.status(500).send(err);
@@ -43,8 +43,8 @@ router.route('/')
 // on accessing user Route by id
 router.route('/:id')
 	// get the user by id
-	.get(function(req, res) {
-		WaterPump.findById(req.params.id, function(err, data) {
+	.get(function (req, res) {
+		WaterPump.findById(req.params.id, function (err, data) {
 			if (err) {
 				return res.status(500).send(err);
 			}
@@ -52,7 +52,7 @@ router.route('/:id')
 		})
 	})
 	// update the user by id
-	.put(function(req, res) {
+	.put(function (req, res) {
 		/*
 		console.log(req.params.user_id);
 		WaterPump.findById(req.params.user_id, function(err, data) {
@@ -72,22 +72,25 @@ router.route('/:id')
 			});
 		})
 		*/
-		WaterPump.findByIdAndUpdate(req.params.id, req.body, function(err, post) {
+		WaterPump.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
 			console.log(req.body);
 			if (err) return next(err);
 			res.status(200).json(post);
 		});
 	})
-	.delete(function(req, res) {
+	.delete(function (req, res) {
 		console.log(req.params.id);
 		WaterPump.remove({
-			_id: req.params.id
-		}, function(err, data) {
-			if (err)
+			task: req.params.id
+		}, function (err, data) {
+			if (err) {
 				res.status(500).send(err);
-			// give some success message
-			//res.sendStatus(200);
-			res.status(200);
+			}
+			else {
+				// give some success message
+				//res.sendStatus(200);
+				res.status(200).json(data);
+			}
 		})
 	});
 

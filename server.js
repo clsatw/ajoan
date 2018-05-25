@@ -23,7 +23,8 @@ const express = require("express"),
 
 app.use(locale(supported, "en"));
 // for routing
-var ifttt = require("./server/routes/ifttt");
+const ifttt = require("./server/routes/ifttt");
+const esp8266 = require('./server/routes/esp8266');
 
 const publicWeb = process.env.PUBLICWEB || "./dist";
 
@@ -62,6 +63,7 @@ app.use('/', function(req, res, next) {
 });
 */
 app.use("/ifttt/bea", ifttt);
+app.use("/pump", esp8266);  
 
 // app.use(express.static(__dirname + '/dist'));
 app.use('/zh-hant', express.static(path.join(__dirname, '/dist/zh-hant/')));
@@ -70,7 +72,7 @@ app.use('/en-US', express.static(path.join(__dirname, '/dist/en-US')));
 // Return index.html for all GET requests for PathLocationStrategy
 // And accept locale style URLs: /en/example
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   // const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
   // const locale = matches && supportedLocales.indexOf(matches[1]) !== -1 ? matches[1] : req.locale;
   let locale = req.locale === 'zh-hant'? req.locale: 'en-US';

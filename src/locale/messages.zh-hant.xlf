@@ -59,7 +59,7 @@
       </trans-unit>
       <trans-unit id="myproj" datatype="html">
         <source>My weekend Iot projects</source>
-           <target>我的假日 Iot 專案</target>
+           <target>我的 物聯網 專案</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
           <context context-type="linenumber">42</context>
