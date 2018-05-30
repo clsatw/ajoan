@@ -44,7 +44,8 @@ router.route('/')
 router.route('/:id')
 	// get the user by id
 	.get(function (req, res) {
-		WaterPump.findById(req.params.id, function (err, data) {
+    // WaterPump.findById(req.params.id, function (err, data) {
+    WaterPump.find({ task: 'aquarium' }, (err, data)=> {
 			if (err) {
 				return res.status(500).send(err);
 			}
