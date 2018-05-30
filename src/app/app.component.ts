@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router} from '@angular/router';
 import { distinctUntilChanged } from 'rxjs/operators';
+import { SwUpdate } from '@angular/service-worker';
 
 declare let gtag: Function;
 
@@ -11,7 +12,7 @@ declare let gtag: Function;
 })
 export class AppComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor(private swUpdate: SwUpdate, private router: Router) {}
 
   ngOnInit() {
     this.router.events
@@ -26,5 +27,13 @@ export class AppComponent implements OnInit {
       .subscribe((x: any) => {
         gtag('event', 'page_view', { page_path: x.url });
       });
+
+      if (this.swUpdate.isEnabled) {
+        this.swUpdate.available.subscribe(() => {
+            if (confirm('New version available. Load New Version?')) {
+                window.location.reload();
+            }
+        });
+    }
   }
 }

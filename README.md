@@ -74,4 +74,9 @@ to do lists:
 
     When you're deploying to non-root path within a domain, you'll need to manually update the <base href="/"> tag in your dist/index.html.
     In this case, you will need to update to <base href="/zh-hant/"> for index.html in /dist/zh-hant. by the same token <base href='/en-US/> for index.html in /dist/en-US
-
+    This also can be accomplished by scritp in package.json:
+    build:zh-hant": "ng build --prod --base-href \"/zh-hant/\" --i18n-file=src/locale/messages.zh-hant.xlf --output-path dist/zh-hant --i18n-format xlf --i18n-locale zh-hant",
+    
+    PWA:
+    https://blog.angular-university.io/angular-service-worker/
+    https://angular.io/guide/service-worker-getting-started

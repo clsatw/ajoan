@@ -13,6 +13,8 @@ import { environment } from 'app/core/environment.prod';
 import { CoreModule } from 'app/core/core.module';
 import { ProdService } from 'app/prod.service';
 import { LanguageSwitcherComponent } from 'app/language-switcher/language-switcher.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment as envi } from '../environments/environment';
 
 // 步驟 1 for google analytics
 export const EnvironmentToken = new InjectionToken('ENVIRONMENT');
@@ -37,7 +39,9 @@ declare let gtag: Function;
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    // the path of ngsw-worker.js should be relative coz we have base href set in index.html
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: envi.production })
   ],
   providers: [
     ProdService,
