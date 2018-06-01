@@ -2,7 +2,7 @@
 var express = require('express');
 // var bodyParser = require('body-parser');
 //var parseUrlEncoded = bodyParser.urlencoded({ extended: true });
-var WaterPump = require('../models/WaterPump.model');
+var WaterPump = require('../models/waterpump.model');
 //console.log(WaterPump);
 
 // returens router instanace which can be mounted as a middleware
