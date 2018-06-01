@@ -41,7 +41,7 @@ declare let gtag: Function;
     MatIconModule,
     MatListModule,
     // the path of ngsw-worker.js should be relative coz we have base href set in index.html
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: envi.production })
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: envi.production })
   ],
   providers: [
     ProdService,
