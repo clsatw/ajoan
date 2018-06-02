@@ -10,7 +10,7 @@
   "prefer_related_applications": false,
   "display": "standalone",
   "scope": "/",
-  "start_url": "/", 
+  "start_url": "./",  
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",

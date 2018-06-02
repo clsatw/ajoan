@@ -54,9 +54,10 @@ to do lists:
     9. iot button
     10. mDns for firmware update
     11. iot bulb at home 
-    12  angular language service -- done
-    13 pwa
-    14 nginx -- done
+    12. angular language service -- done
+    13. pwa --  
+    14. nginx -- done
+    15. https -- done
 
     https://medium.com/@intellix/production-ready-angular-cli-v1-0-0-with-i18n-and-localised-urls-1f3cf16cc204
     // i18n - internationization
