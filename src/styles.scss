@@ -1,17 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-/* @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
 @import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+/*
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '~@angular/material/prebuilt-themes/purple-green.css';
-*/
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+*/
 body {
   font-family: Roboto, sans-serif;
   font-weight: normal;
   margin: 0em;
-  color: #888;
+  /* color: red; */
 }
-
+/*
 h1 {
   color: royalblue;
 }
@@ -22,11 +22,11 @@ h3 {
   color: darkorange;
 }
 h4 {
-  color: tomato;
+  color:midnightblue;
 }
-
+*/
 .container {
-  margin: 2em;
+  margin: 0.1em;
 }
 
 .white-text{
@@ -34,7 +34,7 @@ h4 {
 }
 
 .background-accent-color{
-  background-color: #ff4081!important;  
+  background-color: #ff4081!important;
 }
 .background-primary-color{
   color:#3f51b5!important;

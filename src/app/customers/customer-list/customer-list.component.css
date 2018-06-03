@@ -1,12 +1,12 @@
 .grid-container {
-  margin: 1em;
+  margin: 0.2em;
 }
 
 .dashboard-card {
  margin: 1em;
   /*position: absolute; */
   max-width: 100%;
- 
+
 }
 
 .more-button {
