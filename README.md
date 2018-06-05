@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 // roach
 npm i express --save
-create a index.js on app root folder. a basic 
+create a index.js on app root folder. a basic
 // production build
 ng build --prod   // to create built files in ./dist folder, so index.js can render index.html from it folder
 node index
@@ -50,12 +50,12 @@ to do lists:
     4. enable ftp service on mean server for dlink camera motion detector
     5. beautify website
     6. google analystics
-    7. esp8266 deep sleep 
+    7. esp8266 deep sleep -- done
     9. iot button
     10. mDns for firmware update
-    11. iot bulb at home 
+    11. iot bulb at home
     12. angular language service -- done
-    13. pwa --  
+    13. pwa --  done
     14. nginx -- done
     15. https -- done
 
@@ -77,7 +77,7 @@ to do lists:
     In this case, you will need to update to <base href="/zh-hant/"> for index.html in /dist/zh-hant. by the same token <base href='/en-US/> for index.html in /dist/en-US
     This also can be accomplished by scritp in package.json:
     build:zh-hant": "ng build --prod --base-href \"/zh-hant/\" --i18n-file=src/locale/messages.zh-hant.xlf --output-path dist/zh-hant --i18n-format xlf --i18n-locale zh-hant",
-    
+
     PWA:
     https://blog.angular-university.io/angular-service-worker/
     https://angular.io/guide/service-worker-getting-started
