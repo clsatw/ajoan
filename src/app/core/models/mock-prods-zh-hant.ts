@@ -3,10 +3,9 @@ import { Prod } from 'app/core/models/prod';
 export const PRODS_ZH_HANT: Prod[] = [
   {
     id: 1,
-    name: 'IFTTT 雲端魚缸打水',
-    desc: `支援 IFTTT (If This, Then That).
-     本例中利用 IFTTT 雲端服務, 每天於 9: 30 PM 啓動馬達為給魚缸打氣.
-     你可自行在 IFTTT 網站設定啓動及関閉時間.`,
+    name: '極省電魚缸打水',
+    desc: `晶片開機或從睡眠模式醒來時檢查是否有打水事件需處理, 如有的話啓動馬達為魚缸打氣 10 分鐘后進入深度睡眠模式 3.5 小時,
+     如沒有事件需處理, 直接進入深度模式 3.5 小時. 重復上述動作已達省電效果.`,
     url1: 'assets/waterpump1.mp4',
     url2: 'assets/waterpump-m.mp4',
     col: 1,

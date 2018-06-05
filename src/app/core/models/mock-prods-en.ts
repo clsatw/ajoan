@@ -3,9 +3,11 @@ import { Prod } from 'app/core/models/prod';
 export const PRODS_EN: Prod[] = [
   {
     id: 1,
-    name: 'IFTTT Aquarium Water Pump',
-    desc: `Support IFTTT (If This, Then That).
-     In this example, I create an IFTTT applet to turn on the pump at 9:30 PM every day.`,
+    name: 'Aquarium Water Pump （deep sleep mode enabled)',
+    desc: `very low power consumption.
+      On power on or waking up from sleep mode, it checks if there is an event to handle.
+      If so, turn on the pump for 10 minutes and then enter deep sleep mode for 3.5 hours, else go into sleep mode for 3.5 hours.
+      Repeat the procedue to reduce power comsuption`,
     url1: 'assets/waterpump1.mp4',
     url2: 'assets/waterpump-m.mp4',
     col: 1,

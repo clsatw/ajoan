@@ -1,6 +1,6 @@
 import { Faq } from 'app/core/models/faq';
 
-export const FAQS_ZH_HANT: Faq[] = [
+export const FAQ_ZH_HANT: Faq[] = [
   {
     q: '如何連 Iot 設備到 internet',
     answers: [

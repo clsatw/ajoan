@@ -10,10 +10,12 @@ import { I18nService } from 'app/services/i18n.service';
 import { Prod } from 'app/core/models/prod';
 import { PRODS_EN } from 'app/core/models/mock-prods-en';
 import { PRODS_ZH_HANT } from 'app/core/models/mock-prods-zh-hant';
+import { PRODS_ZH_HANS } from 'app/core/models/mock-prods-zh-hans';
 
 import { Faq } from 'app/core/models/faq';
-import { FAQS_EN } from 'app/core/models/mock-faqs-en';
-import { FAQS_ZH_HANT } from 'app/core/models/mock-faqs-zh-hant';
+import { FAQ_EN } from 'app/core/models/mock-faq-en';
+import { FAQ_ZH_HANT } from 'app/core/models/mock-faq-zh-hant';
+import { FAQ_ZH_HANS } from 'app/core/models/mock-faq-zh-hans';
 
 @Injectable({
   providedIn: 'root'
@@ -21,21 +23,24 @@ import { FAQS_ZH_HANT } from 'app/core/models/mock-faqs-zh-hant';
 export class ProdService {
   localeID: string;
   PRODS: Prod[];
-  FAQS: Faq[];
+  FAQ: Faq[];
 
   constructor(private n18iService: I18nService, public matSnackBar: MatSnackBar) {
     this.localeID = this.n18iService.getLocaleId();
-    if (this.localeID === 'en-US') {
-      this.PRODS = PRODS_EN;
-      this.FAQS = FAQS_EN;
-    } else if (this.localeID === 'zh-hant') {
+    if (this.localeID === 'zh-hant') {
       this.PRODS = PRODS_ZH_HANT;
-      this.FAQS = FAQS_ZH_HANT;
+      this.FAQ = FAQ_ZH_HANT;
+    } else if (this.localeID === 'zh-hans') {
+      this.PRODS = PRODS_ZH_HANS;
+      this.FAQ = FAQ_ZH_HANS;
+    } else {
+      this.PRODS = PRODS_EN;
+      this.FAQ = FAQ_EN;
     }
   }
 
   getFaqs(): Observable<Faq[]> {
-    return of(this.FAQS);
+    return of(this.FAQ);
   }
 
   getProds(): Observable<Prod[]> {

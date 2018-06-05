@@ -1,6 +1,6 @@
 import { Faq } from 'app/core/models/faq';
 
-export const FAQS_EN: Faq[] = [
+export const FAQ_EN: Faq[] = [
   {
     q: 'How to connect my devices to wifi?',
     answers: [

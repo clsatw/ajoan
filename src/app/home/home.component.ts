@@ -21,6 +21,6 @@ export class HomeComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.btn.nativeElement.setAttribute('highlight', '');
+    // this.btn.nativeElement.setAttribute('highlight', '');
   }
 }

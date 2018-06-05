@@ -48,7 +48,7 @@ to do lists:
     2. follwer
     3. camera
     4. enable ftp service on mean server for dlink camera motion detector
-    5. beautify website
+    5. beautify website -- partcial done.
     6. google analystics
     7. esp8266 deep sleep -- done
     9. iot button
