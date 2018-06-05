@@ -1,5 +1,5 @@
 import { Component, Inject, LOCALE_ID } from '@angular/core';
-import { locales } from 'app/locales.value';
+import { locales } from './locales.value';
 @Component({
   selector: 'app-language-switcher',
   templateUrl: './language-switcher.component.html',

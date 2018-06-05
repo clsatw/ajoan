@@ -1,17 +1,14 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements AfterViewInit {
   @ViewChild('vid') private vid: ElementRef;
   @ViewChild('myBtn') private btn: ElementRef;
   constructor() { }
-
-  ngOnInit() {
-  }
 
   playVideo() {
     if (this.vid.nativeElement.paused) {
@@ -24,6 +21,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    //
+    this.btn.nativeElement.setAttribute('highlight', '');
   }
 }

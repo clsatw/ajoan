@@ -3,7 +3,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import { Observable } from 'rxjs';
 import { NavigationEnd, Router, RouterEvent, NavigationCancel, NavigationError, NavigationStart, Event } from '@angular/router';
 
-import { locales } from 'app/locales.value';
+import { locales } from 'app/language-switcher/locales.value';
 
 @Component({
   selector: 'app-main-nav',

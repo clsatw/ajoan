@@ -8,6 +8,7 @@
     "start:zh-hant": "ng s --aot --i18n-file src/locale/messages.zh-hant.xlf --i18n-format xlf --i18n-locale zh-hant",
     "build": "ng build --prod --base-href \"/en-US/\" --output-path dist/en-US",
     "build:zh-hant": "ng build --base-href \"/zh-hant/\" --prod --i18n-file=src/locale/messages.zh-hant.xlf --output-path dist/zh-hant --i18n-format xlf --i18n-locale zh-hant",
+    "build:zh-hans": "ng build --base-href \"/zh-hans/\" --prod --i18n-file=src/locale/messages.zh-hans.xlf --output-path dist/zh-hans --i18n-format xlf --i18n-locale zh-hans",
     "build:fr": "ng build --aot --output-path dist/fr --base-href /customer-app/fr/ --i18nFile=src/locale/messages.fr.xlf --i18nFormat=xlf --locale=fr",
     "test": "ng test",
     "lint": "ng lint",

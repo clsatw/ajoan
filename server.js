@@ -66,15 +66,24 @@ app.use("/ifttt/bea", ifttt);
 app.use("/pump", esp8266);  
 
 app.use('/zh-hant', express.static(path.join(__dirname, '/dist/zh-hant/')));
+app.use('/zh-hans', express.static(path.join(__dirname, '/dist/zh-hans/')));
 app.use('/en-US', express.static(path.join(__dirname, '/dist/en-US')));
 
 // Return index.html for all GET requests for PathLocationStrategy
 // And accept locale style URLs: /en/example
 
 app.get('/', (req, res) => {
+  let locale = '';
   // const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
   // const locale = matches && supportedLocales.indexOf(matches[1]) !== -1 ? matches[1] : req.locale;
-  let locale = req.locale === 'zh-hant'? req.locale: 'en-US';
+  // let locale = req.locale === 'zh-hant'? req.locale: 'en-US';
+  if (req.locale === 'zh-hant')
+    locale ='zh-hant';
+  else if (req.locale === 'zh-hans')
+    locale = 'zh-hans';
+  else
+    locale = 'en-US';
+
   console.log('you ask for: ', req.headers["accept-language"]); 
   console.log('locale: ', locale);
   // app.use(express.static(path.join(__dirname, `/dist/${locale}/`)));

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="menuP" datatype="html">
+        <source>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>dashboard<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
+        Internet of Thing Projects
+      </source>
+         <target>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>dashboard<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
+        物联网 专案
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuH" datatype="html">
+        <source>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>help<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
+        Support
+      </source>
+         <target>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>help<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
+        技术支持
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuA" datatype="html">
+        <source>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>face<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
+        About me
+      </source>
+       <target>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>face<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
+        关于我
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="534d1e3ed41aca0af3031603bf8aaba47680dc7d" datatype="html">
+        <source>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>g-translate<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+      </source>
+       <target>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>translate<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">subheader in sidenav for interface languages</note>
+      </trans-unit>
+      <trans-unit id="myproj" datatype="html">
+        <source>My weekend Iot projects</source>
+           <target>我的 物联网 专案</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="motivation" datatype="html">
+        <source>
+        <x id="START_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;ng-template&gt;"/>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>speaker_notes<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Motivation<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
+        <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>Aadvances in Iot research and applications <x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> more and more Iot resouces are available on the net<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/>I bought a
+            <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Boe-Bot robot kit <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> from Parallax inc a few years ago, and managed to make it bluetooth controllabe. Although I was keen to
+            have it wifi controllable, I didnt have enough Iot related knowledge to make it work until I read a technical article regarding
+            <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/> ESP8266<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> on the Net.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/> The chip not only has wifi and gpio bult in, but also is inexpensive (~US$2.5). Thus, I&apos;m starting my Iot weekend projects.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+      </source>
+      <target>
+        <x id="START_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;ng-template&gt;"/>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>speaker_notes<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 研究
+          <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>动机<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
+        <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>物联网 的盛行及 ESP8266 芯片上市<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>物联网 的盛行, 而使网络上有更多的相关的资源及方便的开发环境
+        <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/>几年前 我上网到 Parallax 公司买了一组
+            <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Boe-Bot robot kit. <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> 当时我没足够的知识透过 WIFI 控制, 只能利用蓝芽控制. 直到2107年在网络发现            
+            <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>
+              ESP8266 芯片.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/> 该芯片内建 wifi 及 gpio 而且非常便宜 (~NT$80), 因而开始我的 物联网 项目.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prupose" datatype="html">
+        <source>
+        <x id="START_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;ng-template&gt;"/>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>view_agenda<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Objective and purpose<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> of the projects          
+        <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>To implement home automation &amp; surveilance at low cost &amp; low power consumption <x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>To help the environment by saving energy<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/>The chip can be programmed like any other Arduino devices, which is very convenient for me to buid home automation/surveilance.
+            It is low power-comsumption, low cost,  and supports sleeping mode, which is a good choice for my projects. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+      </source>
+         <target>
+        <x id="START_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;ng-template&gt;"/>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>view_agenda<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 研究
+          <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>目的<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
+        <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>以低成本建制家庭自动化及安全监控系统<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>节能省电省钱<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/>可以用 Arduino 开发工具来开发 ESP8266 非常方便, 而且它耗电量少, 价格低廉, 并支持睡眠模式是极佳的选择. 
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="method" datatype="html">
+        <source>
+        <x id="START_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;ng-template&gt;"/>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>info_outline<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Approach to the problem<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
+        <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>Iot question 101: How to access the device from anywhere?<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>It is easy to connect esp8266 devcies to the net; however, there are some problems need to be resolved:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              When programming, we usually hard code ssid and password into the devie for wifi connection, but what if we take it to somewhere
+              else or we change our router&apos;s ssid or password?
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              After the device get connected to the Net, it is assigned a dynamce private ip adress by DHCP server and doesn&apos;t have a DNS name, something likes www.abc.com.
+              How can we acess it from anywhere?
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              How to trigger an event for the device to take action(s)? e.g, I want the device to automatcially turn on/off aquarium waterpump at
+              a specified time.
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              Last but not least, we need to put the device into sleeping mode to save power.
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+        <x id="START_TAG_MAT-DIVIDER" ctype="x-mat-divider" equiv-text="&lt;mat-divider&gt;"/><x id="CLOSE_TAG_MAT-DIVIDER" ctype="x-mat-divider" equiv-text="&lt;/mat-divider&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>Something to the rescue <x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>After researching and pulling most my hair out, the follwoing services/framework are adpoted to achieve the goal:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              3rd party wifi manager library
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>MQTT (Message Queuing Telemetry Transport)<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/> IFTTT (If This Then That) <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> interrupt and deep_sleep mode in arduion<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+      </source>
+          <target>
+        <x id="START_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;ng-template&gt;"/>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>info_outline<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 研究
+          <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>方法<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
+        <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>如何从任何地方控制 物联网 设备?<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>让 物联网 设备连上网并不难; 然而, 有一些棘手的问题需要解决:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              将 WIFI SSID 及 密码写入芯片并不实际, 但它没有键盘及屏幕, 要如何连上不同的 wifi?              
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              连上网之后, 它没有一个固定 public IP 地址 or 网址, 要如何从外面控制它?
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              如何在预设的 时间,日期 到达时触发 物联网 设备去执行指定的工作?
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              如何省电 (例如一天只被触发一次去打开水族箱的抽水马达)?
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+        <x id="START_TAG_MAT-DIVIDER" ctype="x-mat-divider" equiv-text="&lt;mat-divider&gt;"/><x id="CLOSE_TAG_MAT-DIVIDER" ctype="x-mat-divider" equiv-text="&lt;/mat-divider&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>IFTTT 服务及 MQTT 平台的利用来完成目的 <x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>研究之后采用下面的几个方法:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
+          <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              arduino wifi manager library
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>MQTT (Message Queuing Telemetry Transport)<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>
+              <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/> IFTTT (If This Then That) <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> interrupt and deep_sleep mode<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+        <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="address" datatype="html">
+        <source>
+      I&apos;d appreciate some feeback on my projects. If you have any questions, please email me at
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>email me<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+        giraftw2002@gmail.com
+      <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+    </source>
+      <target>
+      感谢任何指教, 如有问题请 email 我
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>email me<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+        giraftw2002@gmail.com
+      <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about/about.component.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ifttt" datatype="html">
+        <source>click on here to learn more about IFTTT</source>
+          <target>点此以了解更多有关 IFTTT 服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/customers/customer-list/customer-list.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="178a7efa8751de386db853d9967e3b92faf7c97d" datatype="html">
+        <source>
+      <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>navigate_before<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+      Go back
+    </source>
+     <target>
+      <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>navigate_before<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+      囘上一頁
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/customers/customer-list/customer-list.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">back</note>
+      </trans-unit>
+      <trans-unit id="footer" datatype="html">
+        <source>
+      <x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/>This is my favorit project<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>I have also developed a mobile app that can control the robot car&apos;s speed, distant to wall &amp; sensor reading frequency.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>
+        <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>You can control it from anywhere as long as there is a wifi connection available.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> A camera will be attached
+        to it soon.<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/>
+    </source>
+        <target>
+      <x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/>我最喜欢的专案<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>我同时也开发一个手机 app 来从任何地方控制智能车. 该 app 可实时调整车速, 离墙面的距离, 避障传感器读取频率.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>
+        <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>你可在任何有 Wifi (或手机网络分享) 的地方远程遥控智能车.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> 
+        未來将会加装一个 camera 在智能车上.<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/>
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="play" datatype="html">
+        <source>Play</source>
+        <target>播放</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="questions" datatype="html">
+        <source>Questions:</source>
+         <target>问题</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="answer" datatype="html">
+        <source>Answer:</source>
+         <target>解答</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footage" datatype="html">
+        <source><x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>videocam<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> footage of example</source>
+        <target><x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>videocam<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 看影片解说</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/support/support.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -15,6 +15,7 @@ import { ProdService } from 'app/prod.service';
 import { LanguageSwitcherComponent } from 'app/language-switcher/language-switcher.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment as envi } from '../environments/environment';
+import { AddAttrDirective } from 'app/home/add-attr.directive';
 
 // 步驟 1 for google analytics
 export const EnvironmentToken = new InjectionToken('ENVIRONMENT');
@@ -27,6 +28,7 @@ declare let gtag: Function;
     AppComponent,
     AppMainNavComponent,
     LanguageSwitcherComponent,
+    AddAttrDirective,
   ],
   imports: [
     BrowserModule,
