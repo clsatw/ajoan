@@ -6,28 +6,25 @@
       <a mat-list-item routerLink="/home">
         <mat-icon>home</mat-icon>&nbsp;Home</a>
       <a mat-list-item routerLink="/products" i18n="@@menuP">
-        <mat-icon>dashboard</mat-icon>&nbsp;
-        Internet of Things
+        <mat-icon>dashboard</mat-icon>&nbsp; Internet of Things
       </a>
       <!--
       <a mat-list-item routerLink="/orders">
         <mat-icon>shopping cart</mat-icon>&nbsp;Orders</a>
       -->
       <a mat-list-item routerLink="/support" i18n="@@menuH">
-        <mat-icon>help</mat-icon>&nbsp;
-        Support
+        <mat-icon>help</mat-icon>&nbsp; Support
       </a>
       <a mat-list-item routerLink="/about" i18n="@@menuA">
-        <mat-icon>face</mat-icon>&nbsp;
-        About me
+        <mat-icon>face</mat-icon>&nbsp; About me
       </a>
 
       <mat-divider></mat-divider>
 
       <h3 mat-subheader>
-          <mat-icon color="warn">g-translate</mat-icon>
+        <mat-icon color="warn">g-translate</mat-icon>
       </h3>
-      <ng-template ngFor let-locale [ngForOf]= 'locales'>
+      <ng-template ngFor let-locale [ngForOf]='locales'>
         <a mat-list-item *ngIf="locale.code !== localeId" href="/{{locale.code}}/">
           {{locale.text}}</a>
         <mat-list-item *ngIf="locale.code === localeId">{{locale.text}}</mat-list-item>
@@ -40,12 +37,18 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span i18n='@@myproj'>My weekend Iot projects</span>
+
+      <span class='spacer'></span>
+        <a href='#'>link 1</a>
+        <a href='#'>link 2</a>
+        <a href='#'>link 3</a>
+
     </mat-toolbar>
 
     <!-- add spinner automatically for any slow  rout -->
     <span class='glyphicon glyphicon-refresh glyphicon-spin spinner' *ngIf='loading'></span>
 
-      <router-outlet></router-outlet>
+    <ng-content></ng-content>
 
   </mat-sidenav-content>
 </mat-sidenav-container>

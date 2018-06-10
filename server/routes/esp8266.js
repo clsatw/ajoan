@@ -45,7 +45,9 @@ router.route('/:id')
 	// get the user by id
 	.get(function (req, res) {
     // WaterPump.findById(req.params.id, function (err, data) {
-    WaterPump.find({ task: 'aquarium' }, (err, data)=> {
+    // findOne is for returing a {} json object instead of [{}], so
+    // in arduino parsejosn won't fail.
+    WaterPump.findOne({ task: 'aquarium' }, (err, data)=> {
 			if (err) {
 				return res.status(500).send(err);
 			}
