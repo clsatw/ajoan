@@ -10,7 +10,7 @@
 -->
 <div [ngClass]="{'dark-theme': isDarkTheme | async}">
   <div class='mat-app-background'>
-    <app-main-nav>      
+    <app-main-nav [isDarkTheme]='isDarkTheme'>      
       <router-outlet></router-outlet>
     </app-main-nav>
   </div>

@@ -1,4 +1,4 @@
-import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit, Input } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { NavigationEnd, Router, RouterEvent, NavigationCancel, NavigationError, NavigationStart, Event } from '@angular/router';
@@ -12,6 +12,7 @@ import { ThemeService } from '../core/services/theme.service';
   styleUrls: ['./app-main-nav.component.css']
 })
 export class AppMainNavComponent {
+  @Input() isDarkTheme: any;
   locales = [];
   localeId = '';
   loading: boolean;
