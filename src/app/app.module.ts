@@ -4,8 +4,9 @@ import { NgModule, Inject, InjectionToken } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatSlideToggleModule } from '@angular/material';
 
+// import {AppMainNavModule} from 'app/app-main-nav/app-main-nav.module';
 import { AppRoutingModule } from 'app/app-routing.module';
 import { AppMainNavComponent } from 'app/app-main-nav/app-main-nav.component';
 import { AppComponent } from 'app/app.component';
@@ -32,6 +33,7 @@ declare let gtag: Function;
   ],
   imports: [
     BrowserModule,
+    // AppMainNavModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
@@ -42,6 +44,7 @@ declare let gtag: Function;
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatSlideToggleModule,
     // the path of ngsw-worker.js should be relative coz we have base href set in index.html
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: envi.production })
   ],

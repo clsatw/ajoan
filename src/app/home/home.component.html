@@ -1,25 +1,24 @@
-<div class='container'>
-  <mat-card>
+<mat-card>
+  <mat-card-content>
+    <video mat-card-image #vid autoplay muted loop>
+      <source src='assets/home.mp4' type='video/mp4'>
+    </video>
+  </mat-card-content>
+</mat-card>
 
-    <mat-card-content>
-      <video mat-card-image #vid autoplay muted loop>
-        <source src='assets/home.mp4' type='video/mp4'>
-      </video>
-    </mat-card-content>
-  </mat-card>
-  <mat-divider></mat-divider>
-  <section class='mat-typography' style="background-color:tomato">
-    <ng-container i18n='@@footer'>
-      <h2>This is my favorit project</h2>
-      <h4>I have also developed a mobile app that can control the robot car's speed,
-         distant to wall & sensor reading frequency.
-        <strong>You can control the robot car from anywhere as long as there is a wifi connection available.
-        </strong>
-        <p>A camera will be attached to it in the future.</p>
-      </h4>
-    </ng-container>
-  </section>
-  <button #myBtn mat-raised-button color="warn" (click)="playVideo()" i18n='@@play'>
+<section class='mat-typography' style="background-color:inherit">
+  <ng-container i18n='@@footer' >
+    <div class='text-muted'>
+    <h2>This is my favorit project</h2>
+    <h4>I have also developed a mobile app that can control the robot car's speed, distant to wall & sensor reading frequency.
+      <strong>You can control the robot car from anywhere as long as there is a wifi connection available.
+      </strong>
+      <p>A camera will be attached to it in the future.</p>
+    </h4>
+    </div>
+  </ng-container>
+  <button #myBtn mat-raised-button color="primary" (click)="playVideo()" i18n='@@play'>
     <mat-icon>play_circle_outline</mat-icon>
     Play
   </button>
+</section>

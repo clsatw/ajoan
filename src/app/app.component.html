@@ -8,7 +8,10 @@
 <button class='mat-button' routerLink="/orders">Orders</button>
 <button class='mat-button' routerLink="/about">about</button>
 -->
-
-<app-main-nav>
-  <router-outlet></router-outlet>
-</app-main-nav>
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+  <div class='mat-app-background'>
+    <app-main-nav>      
+      <router-outlet></router-outlet>
+    </app-main-nav>
+  </div>
+</div>

@@ -19,6 +19,7 @@ import {
   MatGridListModule,
   MatMenuModule,
   MatTabsModule,
+  MatSidenavModule,
 } from '@angular/material';
 
 @NgModule({
@@ -40,6 +41,7 @@ import {
     MatMenuModule,
     MatTabsModule,
     ReactiveFormsModule,
+    MatSidenavModule,
   ],
   exports: [
     MatCheckboxModule,
@@ -58,6 +60,7 @@ import {
     MatGridListModule,
     MatMenuModule,
     MatTabsModule,
+    MatSidenavModule,
   ],
   declarations: []
 })

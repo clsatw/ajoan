@@ -13,7 +13,7 @@ declare let gtag: Function;
 @Component({
   selector: 'app-prod-detail',
   templateUrl: './customer-list.component.html',
-  styleUrls: ['./customer-list.component.css']
+  styleUrls: ['./customer-list.component.scss']
 })
 export class CustomerListComponent implements OnInit {
   prod: Prod;

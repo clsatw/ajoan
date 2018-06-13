@@ -39,10 +39,11 @@
       <span i18n='@@myproj'>My weekend Iot projects</span>
 
       <span class='spacer'></span>
-        <a href='#'>link 1</a>
-        <a href='#'>link 2</a>
-        <a href='#'>link 3</a>
-
+        
+      <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">Dark theme</mat-slide-toggle> 
+      <!--
+      <a href='#'>link 2</a>
+      -->  
     </mat-toolbar>
 
     <!-- add spinner automatically for any slow  rout -->

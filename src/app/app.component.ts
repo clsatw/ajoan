@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router} from '@angular/router';
 import { distinctUntilChanged } from 'rxjs/operators';
 import { SwUpdate } from '@angular/service-worker';
+import { Observable } from 'rxjs';
+
+import { ThemeService } from './core/services/theme.service';
 
 declare let gtag: Function;
 
@@ -11,10 +14,12 @@ declare let gtag: Function;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
-  constructor(private swUpdate: SwUpdate, private router: Router) {}
+  isDarkTheme: Observable<boolean>;
+  constructor(private themeService: ThemeService, private swUpdate: SwUpdate, private router: Router) {}
 
   ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
+
     this.router.events
       .pipe(
         distinctUntilChanged((previous: any, current: any) => {

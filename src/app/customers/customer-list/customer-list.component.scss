@@ -1,0 +1,41 @@
+@import '~@angular/material/theming';
+
+@mixin customerList-theme($theme) {
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $background-color: mat-color($background, card);
+
+.customerList {
+  // @includemat-elevation(2);
+  background-color: mat-color($accent);
+  border: 1rem solid $background-color;
+  padding: 2rem;
+}
+
+
+.grid-container {
+  margin: 0.2em;
+}
+
+.dashboard-card {
+ margin: 1em;
+  /*position: absolute; */
+  max-width: 100%;
+
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+}

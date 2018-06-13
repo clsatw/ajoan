@@ -1,0 +1,5 @@
+@import 'app/customers/customer-list/customer-list.component.scss';
+
+@mixin component-themes($theme) {
+  @include customerList-theme($theme);
+}
