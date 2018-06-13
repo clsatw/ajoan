@@ -4,8 +4,7 @@
     <body>
       <trans-unit id="menuP" datatype="html">
         <source>
-        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>dashboard<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
-        Internet of Things
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>dashboard<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>  Internet of Things
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
@@ -14,29 +13,27 @@
       </trans-unit>
       <trans-unit id="menuH" datatype="html">
         <source>
-        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>help<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
-        Support
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>help<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>  Support
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="menuA" datatype="html">
         <source>
-        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>face<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> 
-        About me
+        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>face<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>  About me
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="myproj" datatype="html">
         <source>My weekend Iot projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="motivation" datatype="html">
@@ -45,14 +42,14 @@
           <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>speaker_notes<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Motivation<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
         <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
         <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
-        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>Aadvances in Iot research and applications <x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
-        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> more and more Iot resouces are available on the net<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/> The growing population of IoT plateforms<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        
         <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
-          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/>I bought a
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>I bought a
             <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Boe-Bot robot kit <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> from Parallax inc a few years ago, and managed to make it bluetooth controllabe. Although I was keen to
-            have it wifi controllable, I didnt have enough Iot related knowledge to make it work until I read a technical article regarding
+            have it wifi controllable, I didnt have enough IoT related knowledge to make it work until I read a technical article regarding
             <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/> ESP8266<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> on the Net.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
-          <x id="START_PARAGRAPH_1" ctype="x-p" equiv-text="&lt;p&gt;"/> The chip not only has wifi and gpio bult in, but also is inexpensive (~US$2.5). Thus, I&apos;m starting my Iot weekend projects.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> The chip not only has wifi and gpio bult in, but also is inexpensive (~US$2.5). Thus, I&apos;m starting my Iot weekend projects.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
         <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
         <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
       </source>
@@ -76,7 +73,7 @@
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/about/about.component.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="method" datatype="html">
@@ -84,7 +81,7 @@
         <x id="START_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;ng-template&gt;"/>
           <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>info_outline<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>Approach to the problem<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
         <x id="CLOSE_TAG_NG-TEMPLATE" ctype="x-ng-template" equiv-text="&lt;/ng-template&gt;"/>
-        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>Iot question 101: How to access the device from anywhere?<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>IoT question 101: How to access the device from anywhere?<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
         <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>It is easy to connect esp8266 devcies to the net; however, there are some problems need to be resolved:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
         <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
           <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
@@ -106,7 +103,7 @@
           <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
         <x id="CLOSE_TAG_SECTION" ctype="x-section" equiv-text="&lt;/section&gt;"/>
         <x id="START_TAG_MAT-DIVIDER" ctype="x-mat-divider" equiv-text="&lt;mat-divider&gt;"/><x id="CLOSE_TAG_MAT-DIVIDER" ctype="x-mat-divider" equiv-text="&lt;/mat-divider&gt;"/>
-        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>Something to the rescue <x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
+        <x id="START_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;h1&gt;"/>Solutions<x id="CLOSE_HEADING_LEVEL1" ctype="x-h1" equiv-text="&lt;/h1&gt;"/>
         <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>After researching and pulling most my hair out, the follwoing services/framework are adpoted to achieve the goal:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
         <x id="START_TAG_SECTION" ctype="x-section" equiv-text="&lt;section&gt;"/>
           <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
@@ -125,12 +122,12 @@
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/about/about.component.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="address" datatype="html">
         <source>
-      I&apos;d appreciate any feeback on my projects, and seeking opportunities for cooperation in Iot development.
+      I&apos;d appreciate any feeback on my projects, and seeking opportunities for cooperation in IoT development.
       If you have any questions, please email me at
       <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
         <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>email me<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
@@ -139,7 +136,7 @@
     </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/about/about.component.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ifttt" datatype="html">
@@ -162,27 +159,28 @@
       </trans-unit>
       <trans-unit id="footer" datatype="html">
         <source>
-      <x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/>This is my favorit project<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/>
-      <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>I have also developed a mobile app that can control the robot car&apos;s speed,
-         distant to wall &amp; sensor reading frequency.
-        <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>You can control the robot car from anywhere as long as there is a wifi connection available.
-        <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
-        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>A camera will be attached to it in the future.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
-      <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/>
-    </source>
+    <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+    <x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/>This is my favorit project<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/>
+    <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>I have also developed a mobile app that can control the robot car&apos;s speed, distant to wall &amp; sensor reading frequency.
+      <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>You can control the robot car from anywhere as long as there is a wifi connection available.
+      <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>A camera will be attached to it in the future.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/>
+    <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+  </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="play" datatype="html">
-        <source>
+  <source>
     <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>play_circle_outline<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
     Play
   </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="questions" datatype="html">
