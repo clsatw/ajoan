@@ -191,15 +191,12 @@ export const PRODS_ZH_HANS: Prod[] = [
 
     id: 9,
 
-    name: 'Iot 按纽',
-
-    desc: ' 开发中...',
-
+    name: 'IoT 按纽',
+    desc: ' 按下按纽來控制遠端設備或送出通知到你的手機, 等等...',
+    url1: 'assets/iotBtn.mp4',
     col: 1,
-
     row: 25,
-
-    pixUrl: 'assets/dht.png'
+    pixUrl: 'assets/iotBtn.png'
 
   },
 

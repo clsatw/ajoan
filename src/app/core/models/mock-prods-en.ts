@@ -98,11 +98,12 @@ export const PRODS_EN: Prod[] = [
   },
   {
     id: 9,
-    name: 'Iot button',
-    desc: 'fire IFTTT events, e.g., sending an email to you, turn on tv, etc.,  when the button is pressed. In developing...',
+    name: 'IoT button',
+    desc: 'pressing the buttun to control remote device(s) or send a notification to your mobile phone, etc.',
+    url1: 'assets/iotBtn.mp4',
     col: 1,
     row: 25,
-    pixUrl: 'assets/dht.png'
+    pixUrl: 'assets/iotBtn.png'
   },
 
 ];
