@@ -3,7 +3,7 @@ import { Prod } from 'app/core/models/prod';
 export const PRODS_EN: Prod[] = [
   {
     id: 1,
-    name: 'Aquarium Water Pump （deep sleep mode enabled)',
+    name: `Water pump (sleep mode)`,
     desc: `very low power consumption.
       On power on or waking up from sleep mode, it checks if there is an event to handle.
       If so, turn on the pump for 10 minutes and then enter deep sleep mode for 3.5 hours, else go into sleep mode for 3.5 hours.
@@ -50,8 +50,8 @@ export const PRODS_EN: Prod[] = [
   },
   {
     id: 5,
-    name: 'Amazon Echo voice controlled power plug',
-    desc: 'echo, turn on tv. Videos will be uploaded soon.',
+    name: 'Alexa-enabled device',
+    desc: 'echo, turn on the TV. Videos will be uploaded soon.',
     col: 1,
     row: 25,
     pixUrl: 'assets/cat.png'

@@ -5,6 +5,8 @@
   $background: map-get($theme, background);
   $background-color: mat-color($background, card);
 
+.mat-card-header { justify-content: center; }
+
 .customerList {
   // @includemat-elevation(2);
   background-color: mat-color($accent);
@@ -18,9 +20,19 @@
 }
 
 .dashboard-card {
- margin: 1em;
+ // margin: 1em;
   /*position: absolute; */
   max-width: 100%;
+
+   /*   
+   background: blue;
+   padding: 10px;
+   color: white;
+   // needed styles below 
+   display: flex;
+   justify-content: space-between;
+   width: 500px;
+   */
 
 }
 
