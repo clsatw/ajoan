@@ -90,13 +90,6 @@ export const PRODS_EN: Prod[] = [
     pixUrl: 'assets/dht1.png'
   },
   {
-    id: 10, name: 'robot with camera',
-    desc: 'In developing...',
-    col: 1,
-    row: 25,
-    pixUrl: 'assets/camera.png'
-  },
-  {
     id: 9,
     name: 'IoT button',
     desc: 'pressing the buttun to control remote device(s) or send a notification to your mobile phone, etc.',
@@ -104,6 +97,13 @@ export const PRODS_EN: Prod[] = [
     col: 1,
     row: 25,
     pixUrl: 'assets/iotBtn.png'
+  },
+  {
+    id: 10, name: 'robot with camera',
+    desc: 'In developing...',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/camera.png'
   },
 
 ];

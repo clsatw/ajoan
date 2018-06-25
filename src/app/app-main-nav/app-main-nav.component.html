@@ -22,7 +22,7 @@
       <mat-divider></mat-divider>
 
       <h3 mat-subheader>
-        <mat-icon color="warn">g-translate</mat-icon>
+        <mat-icon large color="warn">g_translate</mat-icon>
       </h3>
       <ng-template ngFor let-locale [ngForOf]='locales'>
         <a mat-list-item *ngIf="locale.code !== localeId" href="/{{locale.code}}/">
@@ -36,7 +36,7 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="(isHandset | async)!.matches">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span i18n='@@myproj'>My weekend Iot projects</span>
+      <span i18n='@@myproj'>My weekend IoT projects</span>
 
       <span class='spacer'></span>
         

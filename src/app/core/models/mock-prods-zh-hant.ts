@@ -87,13 +87,6 @@ export const PRODS_ZH_HANT: Prod[] = [
     pixUrl: 'assets/dht1.png'
   },
   {
-    id: 10, name: 'robot with camera',
-    desc: '開發中...',
-    col: 1,
-    row: 25,
-    pixUrl: 'assets/camera.png'
-  },
-  {
     id: 9,
     name: 'IoT 按紐',
     desc: '按下按纽来控制远程设备或送出通知到你的手机, 等等...',
@@ -101,6 +94,13 @@ export const PRODS_ZH_HANT: Prod[] = [
     col: 1,
     row: 25,
     pixUrl: 'assets/iotBtn.png'
+  },
+  {
+    id: 10, name: 'robot with camera',
+    desc: '開發中...',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/camera.png'
   },
 
 ];

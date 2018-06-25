@@ -19,11 +19,25 @@
   margin: 0.2em;
 }
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
 .dashboard-card {
  // margin: 1em;
   /*position: absolute; */
-  max-width: 100%;
-
+  // max-width: 100%;
+  width: calc(100%-70px);
+  height: calc(100%-70px);
    /*   
    background: blue;
    padding: 10px;
@@ -50,4 +64,5 @@ video {
   max-width: 100%;
   height: auto;
 }
+
 }
