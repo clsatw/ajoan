@@ -172,9 +172,17 @@ export const PRODS_ZH_HANS: Prod[] = [
     pixUrl: 'assets/dht1.png'
 
   },
-
   {
+    id: 9,
+    name: 'IoT 按纽',
+    desc: ' 按下按纽來控制遠端設備或送出通知到你的手機, 等等...',
+    url1: 'assets/iotBtn.mp4',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/iotBtn.png'
 
+  },
+  {
     id: 10, name: 'robot with camera',
 
     desc: ' 开发中...',
@@ -186,18 +194,4 @@ export const PRODS_ZH_HANS: Prod[] = [
     pixUrl: 'assets/camera.png'
 
   },
-
-  {
-
-    id: 9,
-
-    name: 'IoT 按纽',
-    desc: ' 按下按纽來控制遠端設備或送出通知到你的手機, 等等...',
-    url1: 'assets/iotBtn.mp4',
-    col: 1,
-    row: 25,
-    pixUrl: 'assets/iotBtn.png'
-
-  },
-
 ];
