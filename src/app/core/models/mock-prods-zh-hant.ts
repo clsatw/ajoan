@@ -50,10 +50,11 @@ export const PRODS_ZH_HANT: Prod[] = [
   {
     id: 5,
     name: 'Amazon Echo 聲控開關',
-    desc: 'echo, turn on tv. Videos will be uploaded soon.',
+    desc: 'Alexa, turn on the lights.',
+    url1: 'assets/alexa.mp4',
     col: 1,
     row: 25,
-    pixUrl: 'assets/cat.png'
+    pixUrl: 'assets/echoDot.png'
   },
   {
     id: 6,

@@ -33,8 +33,14 @@ export const FAQ_EN: Faq[] = [
   {
     q: 'How many differnt colors can the LED emit?',
     answers: [
-      `In thory, it can emit 255^3 colors. However, the human eye is unable to
+      `In theory, it can emit 16,777,216 colors. However, the human eye is unable to
       distinguish the tiny color changes.`
     ]
-  }
+  },
+  {
+    q: 'what if alexa cannot find the device',
+    answers: [
+      `alexa, find all devices`
+    ]
+  },
 ];

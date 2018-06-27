@@ -51,10 +51,11 @@ export const PRODS_EN: Prod[] = [
   {
     id: 5,
     name: 'Alexa-enabled device',
-    desc: 'echo, turn on the TV. Videos will be uploaded soon.',
+    desc: 'Alexa, turn on the lights.',
+    url1: 'assets/alexa.mp4',
     col: 1,
     row: 25,
-    pixUrl: 'assets/cat.png'
+    pixUrl: 'assets/echoDot.png'
   },
   {
     id: 6,
