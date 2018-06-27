@@ -39,16 +39,20 @@
         -->
         <mat-button-toggle-group name="socialSharing">
           <mat-icon>share</mat-icon>&nbsp;
-          <a color='primary' mat-mini-fab href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fajoan.com" class="btn btn-social-icon btn-facebook">
+          <a  matTooltip="Share on FB" matTooltipPosition='above' 
+            color='primary' mat-mini-fab href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fajoan.com" class="btn btn-social-icon btn-facebook">           
             <i class="fa fa-facebook"></i>
           </a>&nbsp;
-          <a color='accent' mat-mini-fab href="https://twitter.com/intent/tweet/?text=IoT%20Projects.&amp;url=https%3A%2F%2Fajoan.com" class="btn btn-social-icon btn-twitter">
+          <a matTooltip="Share on Twitter" matTooltipPosition='above' 
+            color='accent' mat-mini-fab href="https://twitter.com/intent/tweet/?text=IoT%20Projects.&amp;url=https%3A%2F%2Fajoan.com" class="btn btn-social-icon btn-twitter">
             <i class="fa fa-twitter"></i>
           </a>&nbsp;    
-          <a color='warn' mat-mini-fab href="https://plus.google.com/share?url=https%3A%2F%2Fajoan.com" mat-button-toggle value="g+">
+          <a matTooltip="Share on Google+" matTooltipPosition='above' 
+            color='warn' mat-mini-fab href="https://plus.google.com/share?url=https%3A%2F%2Fajoan.com" mat-button-toggle value="g+">
             <i class="fa fa-google-plus"></i>
           </a>&nbsp;
-          <a color='muted' mat-mini-fab href="mailto:?subject=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;body=https%3A%2F%2Fajoan.com"
+          <a matTooltip="Share on E-mail" matTooltipPosition='above' 
+            color='muted' mat-mini-fab href="mailto:?subject=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;body=https%3A%2F%2Fajoan.com"
             mat-button-toggle value='email'>
             <mat-icon>email</mat-icon>
           </a>

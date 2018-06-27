@@ -43,21 +43,21 @@ how to deploy the site:
 
 
 to do lists:
-    1. amazon echo
+    1. amazon echo dot -- done
     2. ifttt news auto update on webiste site to enrich content.
     2. follwer
     3. camera
-    4. enable ftp service on mean server for dlink camera motion detector
+    4. enable ftp service on mean server for dlink camera motion detector -- done
     5. beautify website -- partcial done.
     6. google analystics
     7. esp8266 deep sleep -- done
-    9. iot button
+    9. iot button -- done
     10. mDns for firmware update
-    11. iot bulb at home
+    11. iot bulb at home 
     12. angular language service -- done
     13. pwa --  done
     14. nginx -- done
-    15. https -- done
+    15. https -- done    
 
     https://medium.com/@intellix/production-ready-angular-cli-v1-0-0-with-i18n-and-localised-urls-1f3cf16cc204
     // i18n - internationization
