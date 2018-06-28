@@ -181,7 +181,16 @@ export const PRODS_ZH_HANS: Prod[] = [
 
   },
   {
-    id: 10, name: 'robot with camera',
+    id: 10,
+    name: '一百六十万色智能LED',
+    desc: '可 透过 云端控制颜色, 适合泡澡时使用. :-)',
+    url1: 'assets/neoPixel.mp4',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/neoPixel.png'
+  },
+  {
+    id: 11, name: 'robot with camera',
 
     desc: ' 开发中...',
 

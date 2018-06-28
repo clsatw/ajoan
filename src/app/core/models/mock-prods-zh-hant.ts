@@ -97,7 +97,16 @@ export const PRODS_ZH_HANT: Prod[] = [
     pixUrl: 'assets/iotBtn.png'
   },
   {
-    id: 10, name: 'robot with camera',
+    id: 10,
+    name: '一百六十萬色智慧 LED',
+    desc: '可透過雲端控制顔色,  適合泡澡時使用. :-)',
+    url1: 'assets/neoPixel.mp4',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/neoPixel.png'
+  },
+  {
+    id: 11, name: 'robot with camera',
     desc: '開發中...',
     col: 1,
     row: 25,
