@@ -60,7 +60,7 @@ export const PRODS_EN: Prod[] = [
   {
     id: 6,
     name: 'Color changing LED',
-    desc: `The LED changes its colors based on your designate events, e.g., an incoming message from someone, door bell ring,
+    desc: `The LED changes its colors based on specified events, e.g., an incoming message from someone, door bell ring,
           Your local UV index rises above the value you specify, etc.
           Hope this help hearing challenge people.`,
     url1: 'assets/led1.mp4',
@@ -100,7 +100,16 @@ export const PRODS_EN: Prod[] = [
     pixUrl: 'assets/iotBtn.png'
   },
   {
-    id: 10, name: 'robot with camera',
+    id: 10,
+    name: '1.6 million color smart LED',
+    desc: 'WIFI controllable and customizable LED offer 16 Million colors.',
+    url1: 'assets/neoPixel.mp4',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/neoPixel.png'
+  },
+  {
+    id: 11, name: 'robot with camera',
     desc: 'In developing...',
     col: 1,
     row: 25,
