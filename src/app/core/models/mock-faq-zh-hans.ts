@@ -5,7 +5,7 @@ import { Faq } from 'app/core/models/faq';
 export const FAQ_ZH_HANS: Faq[] = [
   {
 
-    q: ' 如何连 Iot 设备到 internet',
+    q: ' 如何连 IoT 设备到 internet',
 
     answers: [
 
@@ -47,7 +47,7 @@ export const FAQ_ZH_HANS: Faq[] = [
 
   {
 
-    q: 'Iot 按钮能做什么?',
+    q: 'IoT 按钮能做什么?',
 
     answers: [
 
@@ -61,7 +61,7 @@ export const FAQ_ZH_HANS: Faq[] = [
 
   {
 
-    q: 'Iot LED 可以有多少颜色?',
+    q: 'IoT LED 可以有多少颜色?',
 
     answers: [
 

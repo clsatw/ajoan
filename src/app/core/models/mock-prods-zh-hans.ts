@@ -96,45 +96,37 @@ export const PRODS_ZH_HANS: Prod[] = [
   },
 
   {
-
     id: 5,
-
-    name: 'Amazon Echo 声控开关',
-
-    desc: 'Alexa, turn on the lights.',
+    name: 'Amazon Alexa 声控 LED',
+    desc: 'Alexa, turn light one on.',
     url1: 'assets/alexa.mp4',
     col: 1,
     row: 25,
     pixUrl: 'assets/echoDot.png'
-
   },
-
   {
-
     id: 6,
-
-    name: ' 云端  情境自动变色LED',
-
-    desc: ` 设定的事件发生时， turn on LED 灯，其颜色根据不同的事件变换。
-
-      希望能对听障同胞有帮助。`,
-
-    url1: 'assets/led1.mp4',
-
-    url2: 'assets/led-m.mp4',
-
+    name: 'Amazon Alexa 声控 智能小車',
+    desc: 'Alexa, trigger autopilot.',
+    url1: 'assets/alexa robotCar.mp4',
     col: 1,
-
     row: 25,
-
+    pixUrl: 'assets/alexa robotCar.png'
+  },
+  {
+    id: 7,
+    name: ' 云端  情境自动变色LED',
+    desc: ` 设定的事件发生时， turn on LED 灯，其颜色根据不同的事件变换。
+      希望能对听障同胞有帮助。`,
+    url1: 'assets/led1.mp4',
+    url2: 'assets/led-m.mp4',
+    col: 1,
+    row: 25,
     pixUrl: 'assets/led.png',
-
   },
 
   {
-
-    id: 7,
-
+    id: 8,
     name: ' 云端  门窗监控',
 
     desc: ` 门窗被打开时 ,  自动送出简讯 , mobile notification, 及 email 通知.`,
@@ -153,7 +145,7 @@ export const PRODS_ZH_HANS: Prod[] = [
 
   {
 
-    id: 8,
+    id: 9,
 
     name: ' 云端  温湿度传感器',
 
@@ -171,7 +163,7 @@ export const PRODS_ZH_HANS: Prod[] = [
 
   },
   {
-    id: 9,
+    id: 10,
     name: 'IoT 按纽',
     desc: ' 按下按纽來控制遠端設備或送出通知到你的手機, 等等...',
     url1: 'assets/iotBtn.mp4',
@@ -181,7 +173,7 @@ export const PRODS_ZH_HANS: Prod[] = [
 
   },
   {
-    id: 10,
+    id: 11,
     name: '一百六十万色智能LED',
     desc: '可 透过 云端控制颜色, 适合泡澡时使用. :-)',
     url1: 'assets/neoPixel.mp4',
@@ -190,7 +182,7 @@ export const PRODS_ZH_HANS: Prod[] = [
     pixUrl: 'assets/neoPixel.png'
   },
   {
-    id: 11, name: 'robot with camera',
+    id: 12, name: 'robot with camera',
 
     desc: ' 开发中...',
 

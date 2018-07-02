@@ -2,7 +2,7 @@ import { Faq } from 'app/core/models/faq';
 
 export const FAQ_ZH_HANT: Faq[] = [
   {
-    q: '如何連 Iot 設備到 internet',
+    q: '如何連 IoT 設備到 internet',
     answers: [
       '進入手機/平板的設定',
       '選 Wi-Fi 並確定 wifi 已開啓. 搜尋可用網路, 點選 ESP 開頭的 SSID 以連綫',
@@ -23,14 +23,14 @@ export const FAQ_ZH_HANT: Faq[] = [
     ]
   },
   {
-    q: 'Iot 按鈕能做什麽?',
+    q: 'IoT 按鈕能做什麽?',
     answers: [
       '你可以結合 IFTTT 應用于預設事件的觸發',
       '例如，獨居老人在家遇到緊急情況需要幫忙時, 按下按鈕, 其親人便會立即收到簡訊',
     ]
   },
   {
-    q: 'Iot LED 可以有多少顔色?',
+    q: 'IoT LED 可以有多少顔色?',
     answers: [
       `理論上， 它可以顯示 16,777,216 顔色. 但人眼無法分辨太細微的變化`
     ]
