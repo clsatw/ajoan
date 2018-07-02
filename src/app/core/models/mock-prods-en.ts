@@ -50,15 +50,25 @@ export const PRODS_EN: Prod[] = [
   },
   {
     id: 5,
-    name: 'Alexa-enabled device',
-    desc: 'Alexa, turn on the lights.',
+    name: 'Alexa enabled IoT Led',
+    desc: 'Alexa, turn light one on.',
     url1: 'assets/alexa.mp4',
+    url2: 'assets/alexa robotCar.mp4',
     col: 1,
     row: 25,
     pixUrl: 'assets/echoDot.png'
   },
   {
     id: 6,
+    name: 'Alexa enabled IoT Robot car',
+    desc: 'Alexa, trigger autopilot.',
+    url1: 'assets/alexa robotCar.mp4',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/alexa robotCar.png'
+  },
+  {
+    id: 7,
     name: 'Color changing LED',
     desc: `The LED changes its colors based on specified events, e.g., an incoming message from someone, door bell ring,
           Your local UV index rises above the value you specify, etc.
@@ -70,7 +80,7 @@ export const PRODS_EN: Prod[] = [
     pixUrl: 'assets/led.png',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Home security',
     desc: `It will send a SMS message, mobile notification and email automatically when the window/door is opened.`,
     col: 1,
@@ -80,8 +90,8 @@ export const PRODS_EN: Prod[] = [
     pixUrl: 'assets/door.png'
   },
   {
-    id: 8,
-    name: 'Temperature / Humidity sensor',
+    id: 9,
+    name: 'Temp/Humidity sensor',
     desc: `read and store the data in the cloude. And you can trigger events, like turn on a/c, dehumidifier, etc.,
           when temperature or humidity reaches a certain number.`,
     url1: 'assets/dht.mp4',
@@ -91,25 +101,25 @@ export const PRODS_EN: Prod[] = [
     pixUrl: 'assets/dht1.png'
   },
   {
-    id: 9,
+    id: 10,
     name: 'IoT button',
     desc: 'pressing the buttun to control remote device(s) or send a notification to your mobile phone, etc.',
     url1: 'assets/iotBtn.mp4',
     col: 1,
-    row: 25,
+    row: 12,
     pixUrl: 'assets/iotBtn.png'
   },
   {
-    id: 10,
+    id: 11,
     name: '1.6 million color smart LED',
     desc: 'WIFI controllable and customizable LED offer 16 Million colors.',
     url1: 'assets/neoPixel.mp4',
     col: 1,
-    row: 25,
+    row: 12,
     pixUrl: 'assets/neoPixel.png'
   },
   {
-    id: 11, name: 'robot with camera',
+    id: 12, name: 'robot with camera',
     desc: 'In developing...',
     col: 1,
     row: 25,

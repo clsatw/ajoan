@@ -49,8 +49,8 @@ export const PRODS_ZH_HANT: Prod[] = [
   },
   {
     id: 5,
-    name: 'Amazon Echo 聲控開關',
-    desc: 'Alexa, turn on the lights.',
+    name: 'Amazon Alexa 聲控 LED',
+    desc: 'Alexa, turn on light one.',
     url1: 'assets/alexa.mp4',
     col: 1,
     row: 25,
@@ -58,6 +58,15 @@ export const PRODS_ZH_HANT: Prod[] = [
   },
   {
     id: 6,
+    name: 'Amazon Alexa 声控 智能小車',
+    desc: 'Alexa, trigger autopilot.',
+    url1: 'assets/alexa robotCar.mp4',
+    col: 1,
+    row: 25,
+    pixUrl: 'assets/alexa robotCar.png'
+  },
+  {
+    id: 7,
     name: '雲端 情境自動變色LED',
     desc: `設定的事件發生時，turn on LED 燈，其顔色根據不同的事件變換。
       希望能對聼障同胞有幫助。`,
@@ -68,7 +77,7 @@ export const PRODS_ZH_HANT: Prod[] = [
     pixUrl: 'assets/led.png',
   },
   {
-    id: 7,
+    id: 8,
     name: '雲端 門窗監控',
     desc: `門窗被打開時, 自動送出簡訊, mobile notification, 及 email 通知.`,
     col: 1,
@@ -78,7 +87,7 @@ export const PRODS_ZH_HANT: Prod[] = [
     pixUrl: 'assets/door.png'
   },
   {
-    id: 8,
+    id: 9,
     name: '雲端 溫濕度感應器',
     desc: `dht`,
     url1: 'assets/dht.mp4',
@@ -88,7 +97,7 @@ export const PRODS_ZH_HANT: Prod[] = [
     pixUrl: 'assets/dht1.png'
   },
   {
-    id: 9,
+    id: 10,
     name: 'IoT 按紐',
     desc: '按下按纽来控制远程设备或送出通知到你的手机, 等等...',
     url1: 'assets/iotBtn.mp4',
@@ -97,7 +106,7 @@ export const PRODS_ZH_HANT: Prod[] = [
     pixUrl: 'assets/iotBtn.png'
   },
   {
-    id: 10,
+    id: 11,
     name: '一百六十萬色智慧 LED',
     desc: '可透過雲端控制顔色,  適合泡澡時使用. :-)',
     url1: 'assets/neoPixel.mp4',
@@ -106,7 +115,7 @@ export const PRODS_ZH_HANT: Prod[] = [
     pixUrl: 'assets/neoPixel.png'
   },
   {
-    id: 11, name: 'robot with camera',
+    id: 12, name: 'robot with camera',
     desc: '開發中...',
     col: 1,
     row: 25,

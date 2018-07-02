@@ -23,11 +23,13 @@
 
       <video mat-card-image autoplay loop>
         <source src={{prod.url1}} type='video/mp4'>
-      </video>
-      <mat-divider></mat-divider>
+      </video> 
+      <hr>
+      <div [hidden]="!prod.url2">
       <video mat-card-image autoplay loop>
         <source src={{prod.url2}} type='video/mp4'>
       </video>
+      </div>
       <mat-card-content class='dashboard-card-content'>
         <p class='mat-h4'>{{prod.desc}}</p>
       </mat-card-content>
