@@ -106,7 +106,7 @@ export const PRODS_ZH_HANS: Prod[] = [
   },
   {
     id: 6,
-    name: 'Amazon Alexa 声控 智能小車',
+    name: 'Amazon Alexa 声控  智能小车',
     desc: 'Alexa, trigger autopilot.',
     url1: 'assets/alexa robotCar.mp4',
     col: 1,
