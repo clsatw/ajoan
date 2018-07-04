@@ -3,6 +3,7 @@ import { NavigationEnd, Router} from '@angular/router';
 import { distinctUntilChanged } from 'rxjs/operators';
 import { SwUpdate } from '@angular/service-worker';
 import { Observable } from 'rxjs';
+import { startWith } from 'rxjs/operators';
 
 import { ThemeService } from './core/services/theme.service';
 
@@ -18,7 +19,7 @@ export class AppComponent implements OnInit {
   constructor(private themeService: ThemeService, private swUpdate: SwUpdate, private router: Router) {}
 
   ngOnInit() {
-    this.isDarkTheme = this.themeService.isDarkTheme;
+    this.isDarkTheme = this.themeService.isDarkTheme.pipe(startWith(true));
 
     this.router.events
       .pipe(
