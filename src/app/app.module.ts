@@ -4,7 +4,8 @@ import { NgModule, Inject, InjectionToken } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatSlideToggleModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
+         MatListModule, MatSlideToggleModule, MatCardModule } from '@angular/material';
 
 // import {AppMainNavModule} from 'app/app-main-nav/app-main-nav.module';
 import { AppRoutingModule } from 'app/app-routing.module';
@@ -17,6 +18,7 @@ import { LanguageSwitcherComponent } from 'app/language-switcher/language-switch
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment as envi } from '../environments/environment';
 import { AddAttrDirective } from 'app/home/add-attr.directive';
+import { HomeComponent } from 'app/home/home.component';
 
 // 步驟 1 for google analytics
 export const EnvironmentToken = new InjectionToken('ENVIRONMENT');
@@ -30,6 +32,7 @@ declare let gtag: Function;
     AppMainNavComponent,
     LanguageSwitcherComponent,
     AddAttrDirective,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,12 +42,14 @@ declare let gtag: Function;
     AppRoutingModule,
     CoreModule,
     LayoutModule,
+    // these are for app-main-nav
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
     MatSlideToggleModule,
+    MatCardModule,
     // the path of ngsw-worker.js should be relative coz we have base href set in index.html
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: envi.production })
   ],
