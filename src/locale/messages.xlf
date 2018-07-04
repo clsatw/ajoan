@@ -8,7 +8,7 @@
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="menuH" datatype="html">
@@ -17,7 +17,7 @@
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="menuA" datatype="html">
@@ -26,14 +26,40 @@
       </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="myproj" datatype="html">
-        <source>My weekend Iot projects</source>
+        <source>My weekend IoT projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app-main-nav/app-main-nav.component.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer" datatype="html">
+        <source>
+    <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+    <x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/>This is my favorit project<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/>
+    <x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3&gt;"/>I have also developed a mobile app that can control the robot car&apos;s speed, distant to wall &amp; sensor reading frequency.
+      <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>You can control the robot car from anywhere as long as there is a wifi connection available.
+      <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>A camera will be attached to it in the future.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    <x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3&gt;"/>
+    <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="play" datatype="html">
+        <source>
+    <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>play_circle_outline<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+    Play
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="motivation" datatype="html">
@@ -143,7 +169,7 @@
         <source>click on here to learn more about IFTTT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/customers/customer-list/customer-list.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="178a7efa8751de386db853d9967e3b92faf7c97d" datatype="html">
@@ -153,35 +179,9 @@
     </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/customers/customer-list/customer-list.component.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">73</context>
         </context-group>
         <note priority="1" from="description">back</note>
-      </trans-unit>
-      <trans-unit id="footer" datatype="html">
-        <source>
-    <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
-    <x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/>This is my favorit project<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/>
-    <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;"/>I have also developed a mobile app that can control the robot car&apos;s speed, distant to wall &amp; sensor reading frequency.
-      <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>You can control the robot car from anywhere as long as there is a wifi connection available.
-      <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
-      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>A camera will be attached to it in the future.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
-    <x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;"/>
-    <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
-  </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/home/home.component.ts</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="play" datatype="html">
-  <source>
-    <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>play_circle_outline<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
-    Play
-  </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/home/home.component.ts</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="questions" datatype="html">
         <source>Questions:</source>
