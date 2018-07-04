@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: 'app/home/home.module#HomeModule'
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home', component: HomeComponent
+    // loadChildren: 'app/home/home.module#HomeModule'
   },
   {
     path: 'products',
@@ -21,11 +27,6 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: 'app/about/about.module#AboutModule'
-  },
-  {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full'
   },
   // {path: '**',
   // loadChildren: 'app/PageNotFound.module#PageNotFoundModule}
