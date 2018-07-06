@@ -40,11 +40,8 @@ export const PRODS_ZH_HANS: Prod[] = [
     url1: 'assets/manual-mode1-s.mp4',
 
     url2: 'assets/manual-mode2-s.mp4',
-
     col: 1,
-
     row: 25,
-
     pixUrl: 'assets/app.png'
 
   },
@@ -52,21 +49,14 @@ export const PRODS_ZH_HANS: Prod[] = [
   {
 
     id: 3,
-
     name: ' 云端  遥控/自走避障车 (自走模式)',
-
     desc: ` 可经由 Android/iPhone app 在任何地方透过 wifi 遥控，并可及时调整车速
 
     , 离前方障碍物最近容许距离 ,  和多久读取 sensors 一次。 `,
-
     url1: 'assets/auto-mode1-b.mp4',
-
     url2: 'assets/auto-mode2-m.mp4',
-
     col: 1,
-
     row: 25,
-
     pixUrl: 'assets/car1.png'
 
   },
@@ -76,23 +66,14 @@ export const PRODS_ZH_HANS: Prod[] = [
     id: 4,
 
     name: ' 遥控 / 自走避障车  (追随者)',
-
     desc: ` 车与车之间透过 wifi 交换讯息
-
        - 在任何地方透过 wifi 重复另一辆车的一举一动.
-
        开发中...`,
-
     url1: '/assets/auto-mode1-b.mp4',
-
     url2: '/assets/auto-mode2-m.mp4',
-
     col: 1,
-
     row: 25,
-
     pixUrl: 'assets/dolls.png'
-
   },
 
   {
