@@ -53,7 +53,6 @@ export const PRODS_EN: Prod[] = [
     name: 'Alexa enabled IoT Led',
     desc: 'Alexa, turn light one on.',
     url1: 'assets/alexa.mp4',
-    url2: 'assets/alexa robotCar.mp4',
     col: 1,
     row: 25,
     pixUrl: 'assets/echoDot.png'
