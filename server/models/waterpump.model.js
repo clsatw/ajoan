@@ -13,6 +13,14 @@ var WaterPumpchema = mongoose.Schema({
 	done: {
 		type: Boolean,
 		default: false
+	},
+	time: {
+		type: Date,
+		default: new Date()
+	},
+	devId:{
+		type:String,
+		unique: true,		
 	}
 });
 

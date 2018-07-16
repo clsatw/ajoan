@@ -13,7 +13,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "extract": "ng xi18n --outputPath=locale"
+    "extract": "ng xi18n --outputPath=locale",
+    "start-server": "./node_modules/.bin/ts-node ./server.ts --secure",
+    "server": "./node_modules/.bin/nodemon -w ./ --ext \".ts\" --exec \"npm run start-server\""
   },
   "private": true,
   "dependencies": {
