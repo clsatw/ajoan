@@ -23,7 +23,7 @@ const express = require("express"),
 
 app.use(locale(supported, "en"));
 // for routing
-const ifttt = require("./server/routes/ifttt");
+// const ifttt = require("./server/routes/ifttt");
 const esp8266 = require('./server/routes/esp8266');
 
 const publicWeb = process.env.PUBLICWEB || "./dist";
@@ -62,7 +62,7 @@ app.use('/', function(req, res, next) {
   next();
 });
 */
-app.use("/ifttt/bea", ifttt);
+// app.use("/ifttt/bea", ifttt);
 app.use("/pump", esp8266);  
 
 app.use('/zh-hant', express.static(path.join(__dirname, '/dist/zh-hant/')));

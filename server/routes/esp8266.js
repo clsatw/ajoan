@@ -15,14 +15,14 @@ router.route('/')
 	// get all the users when a method passed is GET
 	.get(function (req, res) {
 		console.log('water pump get');
-		WaterPump.find(function (err, data) {
+		WaterPump.find((err, data)=> {
 			if (err)
 				res.status(500).send(err);
 			res.status(200).json(data);
 		})
 	})
 	// create a prod when the method passed is POST
-	.post(parseUrlEncoded, function (req, res) {
+	.post(parseUrlEncoded, (req, res)=> {
 		console.log(req.body);
 		// create a new instance of the user model
 		// it should be req.body not req.data as there is no data property in req object
@@ -36,18 +36,18 @@ router.route('/')
 			}
 			// give some success message
 			//console.log(data);
-			res.status(201).json(data);
+			res.status(200).json(data);
 		})
 	});
 
 // on accessing user Route by id
-router.route('/:id')
+router.route('/:devId')
 	// get the user by id
 	.get(function (req, res) {
     // WaterPump.findById(req.params.id, function (err, data) {
     // findOne is for returing a {} json object instead of [{}], so
     // in arduino parsejosn won't fail.
-    WaterPump.findOne({ task: 'aquarium' }, (err, data)=> {
+    WaterPump.findOne({ devId: req.params.devId }, (err, data)=> {
 			if (err) {
 				return res.status(500).send(err);
 			}
@@ -75,17 +75,17 @@ router.route('/:id')
 			});
 		})
 		*/
-		WaterPump.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+		WaterPump.findByIdAndUpdate(req.params.devId, req.body, function (err, post) {
 			console.log(req.body);
 			if (err) return next(err);
 			res.status(200).json(post);
 		});
 	})
 	.delete(function (req, res) {
-		console.log(req.params.id);
+		console.log(req.params.devId);
 		WaterPump.remove({
-			task: req.params.id
-		}, function (err, data) {
+			devId: req.params.devId
+		}, (err, data)=> {
 			if (err) {
 				res.status(500).send(err);
 			}
