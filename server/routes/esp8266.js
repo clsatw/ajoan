@@ -8,8 +8,8 @@ var WaterPump = require('../models/waterpump.model');
 // returens router instanace which can be mounted as a middleware
 var router = express.Router();
 var bodyParser = require('body-parser');
-var parseUrlEncoded = bodyParser.urlencoded({ extended: false });
-
+// var parseUrlEncoded = bodyParser.urlencoded({ extended: false });
+let parseJsonEncoded = bodyParser.json()
 // the root path relative to the path where it's mounted.
 router.route('/')
 	// get all the users when a method passed is GET
@@ -22,7 +22,7 @@ router.route('/')
 		})
 	})
 	// create a prod when the method passed is POST
-	.post(parseUrlEncoded, (req, res)=> {
+	.post(parseJsonEncoded, (req, res)=> {
 		console.log(req.body);
 		// create a new instance of the user model
 		// it should be req.body not req.data as there is no data property in req object
@@ -81,7 +81,7 @@ router.route('/:devId')
 			res.status(200).json(post);
 		});
 	})
-	.delete(function (req, res) {
+	.delete(parseJsonEncoded, (req, res)=> {
 		console.log(req.params.devId);
 		WaterPump.remove({
 			devId: req.params.devId
