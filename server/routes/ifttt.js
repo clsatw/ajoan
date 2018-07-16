@@ -30,23 +30,24 @@ router.use(function(req, res, next){
 // the root path relative to the path where it's mounted.
 router.route('/')
 	// get all the users when a method passed is GET
-  .get(function (req, res) {
-    console.log('bea get');
-		Prods.find(function(err, data) {
+	.get(function (req, res) {
+		console.log('bea get');
+		Prods.find(function (err, data) {
 			if (err)
 				res.status(500).send(err);
 			res.status(200).json(data);
 		})
 	})
 	// create a prod when the method passed is POST
-  .post(parseUrlEncoded, function (req, res) {
-    console.log(req.body);
+	// https://ajoan.com/pump	
+	.post(parseUrlEncoded, function (req, res) {
+		console.log(req.body);
 		// create a new instance of the user model
 		// it should be req.body not req.data as there is no data property in req object
 		var data = new Prods(req.body); // Prods is a schema constructor
 
 		// save the data received
-		data.save(function(err) {
+		data.save(function (err) {
 			if (err) {
 				console.log(err);
 				return res.status(500).send(err);
@@ -58,10 +59,11 @@ router.route('/')
 	});
 
 // on accessing user Route by id
-router.route('/:id')
+router.route('/:devId')
 	// get the user by id
-	.get(function(req, res) {
-		Prods.findById(req.params.id, function(err, data) {
+	.get(function (req, res) {
+		// Prods.findById(req.params.id, function(err, data) {
+		Prods.findOne(req.params.devId, (err, data) => {
 			if (err) {
 				return res.status(500).send(err);
 			}
@@ -69,7 +71,7 @@ router.route('/:id')
 		})
 	})
 	// update the user by id
-	.put(function(req, res) {
+	.put(function (req, res) {
 		/*
 		console.log(req.params.user_id);
 		Prods.findById(req.params.user_id, function(err, data) {
@@ -89,22 +91,23 @@ router.route('/:id')
 			});
 		})
 		*/
-		Prods.findByIdAndUpdate(req.params.id, req.body, function(err, post) {
+		Prods.findByIdAndUpdate(req.params.devId, req.body, (err, post) => {
 			console.log(req.body);
 			if (err) return next(err);
 			res.status(200).json(post);
 		});
 	})
-	.delete(function(req, res) {
-		console.log(req.params.id);
-		Prods.remove({
-			_id: req.params.id
-		}, function(err, data) {
-			if (err)
+	// https://ajoan.com/pump/aquarium
+	.delete(function (req, res) {
+		console.log(req.params.devId);
+		Prods.remove({devId: req.params.devId}, (err, data) => {
+			if (err) {
 				res.status(500).send(err);
-			// give some success message
-			//res.sendStatus(200);
-			res.status(200);
+			} else {
+				// give some success message
+				//res.sendStatus(200);
+				res.status(200);
+			}
 		})
 	});
 

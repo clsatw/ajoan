@@ -28,7 +28,7 @@ export const PRODS_EN: Prod[] = [
   {
     id: 3,
     // tslint:disable-next-line:quotemark
-    name: "Robot car (Autopilot mode)",
+    name: "Autonomous robot car",
     desc: `This robot car can be controlled by a mobile app from anywhere as long as there is wifi connection.
           The app can also tun up its speed, distance to wall and period of sensor reading in real-time.`,
     url1: 'assets/auto-mode1-b.mp4',
