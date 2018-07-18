@@ -1,11 +1,7 @@
-let mongoose = require('mongoose');	 
+let mongoose = require('mongoose');
 
 var WaterPumpModel = mongoose.Schema({
 	/*
-	action: {
-		type: Boolean,
-		default: true
-	},
 	done: {
 		type: Boolean,
 		default: false
@@ -18,6 +14,10 @@ var WaterPumpModel = mongoose.Schema({
 		default: ['aquarium']
 	},
 	*/
+	action: {
+		type: Boolean,
+		default: false
+	},
 	created_date: {
 		type: Date,
 		default: new Date()
