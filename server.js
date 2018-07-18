@@ -16,15 +16,9 @@ const express = require("express"),
   locale = require("locale"),
   supported = ["en", "en_US", "zh-hant"],
 
-  //var index = require('./routes/index');
-  //var users = require('./routes/users');
-
-  app = express();
+app = express();
 
 app.use(locale(supported, "en"));
-// for routing
-// const ifttt = require("./server/routes/ifttt");
-const esp8266 = require('./server/routes/esp8266');
 
 const publicWeb = process.env.PUBLICWEB || "./dist";
 
@@ -51,7 +45,7 @@ if (process.env.NODE_ENV === "dev") {
 // define middleware
 // app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(cookieParser()); // read cookie (needed for auth)
-app.use(bodyParser.urlencoded({ extended: false })); // get info form htlm form
+app.use(bodyParser.urlencoded({ extended: true })); // get info form htlm form
 app.use(bodyParser.json());
 
 /*
@@ -62,8 +56,13 @@ app.use('/', function(req, res, next) {
   next();
 });
 */
+// for routing
+// const ifttt = require("./server/routes/ifttt");
+let WaterPump = require('./server/models/waterpump.model');
+let esp8266 = require('./server/routes/esp8266')(WaterPump);
+
 // app.use("/ifttt/bea", ifttt);
-app.use("/pump", esp8266);  
+app.use("/pump", esp8266);
 
 app.use('/zh-hant', express.static(path.join(__dirname, '/dist/zh-hant/')));
 app.use('/zh-hans', express.static(path.join(__dirname, '/dist/zh-hans/')));
@@ -78,13 +77,13 @@ app.get('/', (req, res) => {
   // const locale = matches && supportedLocales.indexOf(matches[1]) !== -1 ? matches[1] : req.locale;
   // let locale = req.locale === 'zh-hant'? req.locale: 'en-US';
   if (req.locale === 'zh-hant')
-    locale ='zh-hant';
+    locale = 'zh-hant';
   else if (req.locale === 'zh-hans')
     locale = 'zh-hans';
   else
     locale = 'en-US';
 
-  console.log('you ask for: ', req.headers["accept-language"]); 
+  console.log('you ask for: ', req.headers["accept-language"]);
   console.log('locale: ', locale);
   // app.use(express.static(path.join(__dirname, `/dist/${locale}/`)));
   res.sendFile(path.join(__dirname, `/dist/${locale}/index.html`));

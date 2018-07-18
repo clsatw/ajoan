@@ -1,26 +1,31 @@
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');	 
 
-var WaterPumpchema = mongoose.Schema({
-	action: {		
-		type: Boolean,		
-		default: false			
+var WaterPumpModel = mongoose.Schema({
+	/*
+	action: {
+		type: Boolean,
+		default: true
 	},
-	task:{
-		type: String,
-		unique: true,
-		default: 'aquarium'
-	},	
 	done: {
 		type: Boolean,
 		default: false
 	},
-	time: {
+	task: {
+		type: [{
+			type: String,
+			enum: ['aquarium', 'waterPlant', 'feedPets']
+		}],
+		default: ['aquarium']
+	},
+	*/
+	created_date: {
 		type: Date,
 		default: new Date()
 	},
-	devId:{
-		type:String,
-		unique: true,		
+	devId: {
+		type: String,
+		unique: true,
+		required: [true, 'why no device id'],
 	}
 });
 
@@ -30,4 +35,4 @@ var WaterPumpchema = mongoose.Schema({
 /* Mongoose automatically looks for the plural version of your model name. Thus, for the example above, the model user is for the users collection in the database.
 ** declare a model called WaterPump which has schema WaterPumpchema
  */
-module.exports = mongoose.model('WaterPump', WaterPumpchema);
+module.exports = mongoose.model('WaterPump', WaterPumpModel);
