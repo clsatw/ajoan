@@ -20,7 +20,7 @@ var WaterPumpModel = mongoose.Schema({
 	},
 	created_date: {
 		type: Date,
-		default: new Date()
+		default: Date.new
 	},
 	devId: {
 		type: String,
