@@ -20,11 +20,11 @@ var WaterPumpModel = mongoose.Schema({
 	},
 	created_date: {
 		type: Date,
-		default: new Date()
+		default: Date.now
 	},
 	devId: {
-		type: String,
 		unique: true,
+		type: String,
 		required: [true, 'why no device id'],
 	}
 });
