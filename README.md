@@ -58,8 +58,9 @@ to do lists:
     13. pwa --  done
     14. nginx -- done
     15. https -- done
-    16. nativescript -- done.
-    17. wifi extender and smart plug in one    
+    16. nativescript -- done.    
+    17. wifi extender and smart plug in one  
+    18. reactive form by advanced angular of EDX  
 
     https://medium.com/@intellix/production-ready-angular-cli-v1-0-0-with-i18n-and-localised-urls-1f3cf16cc204
     // i18n - internationization
