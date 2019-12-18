@@ -49,7 +49,11 @@ export class ProdService {
     return of(this.PRODS);
   }
 
-  /** GET hero by id. Will 404 if id not found */
+  /** GET hero by id. Will 404 if id not found
+   * Gets prod
+   * @param id
+   * @returns prod
+   */
   getProd(id: number): Observable<Prod> {
     return of(this.PRODS.find(prod => prod.id === id));
   }
