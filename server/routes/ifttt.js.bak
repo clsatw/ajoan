@@ -31,16 +31,28 @@ router.use(function(req, res, next){
 router.route('/')
 	// get all the users when a method passed is GET
 	.get(function (req, res) {
-		console.log('bea get');
-		Prods.find(function (err, data) {
-			if (err)
+		let query = {};
+		if(req.query.devId){
+			query.devId = req.query.devId;
+		}
+		Prods.find(query, (err, data)=> {
+			if (err){
 				res.status(500).send(err);
-			res.status(200).json(data);
+			} else {	
+				let returnDatas[];
+				data.forEach((element, index, array){
+					let newData = element.toJSON();
+					newData.links={};
+					newData.links.slef=`http://${req.headers.host}/api/book/
+					returnDatas.push(newData)
+				})
+				res.status(200).json(data);
+			}
 		})
 	})
 	// create a prod when the method passed is POST
 	// https://ajoan.com/pump	
-	.post(parseUrlEncoded, function (req, res) {
+	.post(parseUrlEncoded, (req, res)=> {
 		console.log(req.body);
 		// create a new instance of the user model
 		// it should be req.body not req.data as there is no data property in req object
@@ -57,7 +69,20 @@ router.route('/')
 			res.status(201).json(data);
 		})
 	});
-
+/*
+router.use('/:id', (req, res, next)=>{
+	Prods.findById(req.params.devId, (err, data)=> {
+		if(err)
+			res.status(500).send(err);
+		else if(data){
+			req.prod = data;
+			next();
+		else{				
+			res.json(404)send('not found');
+		}
+	});
+});
+*/
 // on accessing user Route by id
 router.route('/:devId')
 	// get the user by id
@@ -97,8 +122,9 @@ router.route('/:devId')
 			res.status(200).json(post);
 		});
 	})
+	// .patch()
 	// https://ajoan.com/pump/aquarium
-	.delete(function (req, res) {
+	.delete((req, res)=> {
 		console.log(req.params.devId);
 		Prods.remove({devId: req.params.devId}, (err, data) => {
 			if (err) {
@@ -106,7 +132,7 @@ router.route('/:devId')
 			} else {
 				// give some success message
 				//res.sendStatus(200);
-				res.status(200);
+				res.status(204).send('removed');
 			}
 		})
 	});

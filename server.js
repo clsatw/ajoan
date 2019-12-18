@@ -2,6 +2,21 @@
 // port defined in server/config/env/*.js file
 process.env.NODE_ENV = process.env.NODE_ENV || 'prod'; // has to be before config coz config reads it
 var config = require("./server/config/config");
+/*
+import * as express from 'express';
+import * as mongoose from 'mongoose';
+import * as bodyParser from 'body-parser';
+import * as compress from 'compress';
+import * as path from 'path';
+import * as session from 'express-session';
+import * as locale from 'locale';
+import * as errorHandler from 'errorhandler';
+import * as flash from 'connect-flash';
+import * as favicon from 'serve-favicon';
+import * as cookieParser from 'cookie-parser';
+import * as morgan from 'morgan';
+import * as helmet from 'melmet';
+*/
 const express = require("express"),
   morgan = require("morgan"),
   cookieParser = require("cookie-parser"),
@@ -21,8 +36,15 @@ app = express();
 app.use(locale(supported, "en"));
 
 const publicWeb = process.env.PUBLICWEB || "./dist";
+const options = {
+  server: {
+    auto_reconnect: true,
+    poolSize: 10
+  },
+  safe: true
+}
 
-mongoose.connect(config.db, { safe: true }, function (err) {
+mongoose.connect(config.db, options, err=> {
   if (err) {
     console.error("connection error", err);
   } else {
@@ -63,7 +85,7 @@ let esp8266 = require('./server/routes/esp8266')(WaterPump);
 
 // app.use("/ifttt/bea", ifttt);
 app.use("/pump", esp8266);
-
+app.use(express.static(__dirname, { dotfiles: 'allow' } ));
 app.use('/zh-hant', express.static(path.join(__dirname, '/dist/zh-hant/')));
 app.use('/zh-hans', express.static(path.join(__dirname, '/dist/zh-hans/')));
 app.use('/en-US', express.static(path.join(__dirname, '/dist/en-US')));
@@ -89,6 +111,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, `/dist/${locale}/index.html`));
 });
 
+/* why it listens to 5000 instead of 80 for production?
+** coz linux only allow sudo server.js to listen to port 80, which has security concern
+** the solution is portforwarding over nginx */
 
 app.listen(5000, function (req, res) {
   console.info("Server running at http://localhost: " + config.port);

@@ -7,6 +7,7 @@ let routes = function (WaterPump) {
 	router.route('/')
 		// get all the users when a method passed is GET
 		.get((req, res) => {
+			// http://localhost:5000/pump/?dev=001 will also work
 			let query = {};
 			if (req.query.devId) {
 				query.devId = req.query.devId;
@@ -14,10 +15,18 @@ let routes = function (WaterPump) {
 			}
 			// usage: localhost:5000/pump?action=true
 			WaterPump.find(query, (err, data) => {
-				if (err)
+				if (err) {
 					res.status(500).send(err);
-				else
-					res.status(200).json(data);
+				} else {
+					let retTasks = [];
+					data.forEach((element, index, array) => {
+						let newData = element.toJSON();	//convert mongoose model to json.
+						newData.links = {};
+						newData.links.self = `http://${req.headers.host}/pump/${newData.devId}`;
+						retTasks.push(newData);
+					});
+					res.status(200).json(retTasks);	// append a link to itself for users' reference.
+				}
 			})
 		})
 		// create a prod when the method passed is POST
@@ -57,10 +66,15 @@ let routes = function (WaterPump) {
 			}
 		})
 	})
+	
 	router.route('/:devId')
 		// get the user by id, here id is auto created
 		.get((req, res) => {
-			res.json(req.data);
+			let retTask = req.data.toJSON();
+			retTask.links={}
+			let newLink = `http://${req.headers.host}/pump/?devId=${retTask.devId}`;
+			retTask.links.FilterByThisDevId = newLink.replace(' ', '%20');
+			res.json(retTask);
 		})
 		// update the user by id
 		.put((req, res) => {
@@ -84,7 +98,7 @@ let routes = function (WaterPump) {
 		// localhost:5000/pump/001
 		.delete((req, res) => {
 			console.log(req.params.devId);
-			WaterPump.remove({devId: req.params.devId}, (err) => {
+			WaterPump.remove({ devId: req.params.devId }, (err) => {
 				if (err) {
 					res.status(500).send(err);
 				}

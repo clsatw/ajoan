@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
-
-var prodSchema = mongoose.Schema({
+// var mongoose = require('mongoose');
+import { Schema, model} from 'mongoose';
+let prodSchema = new Schema({
 	title: {
 		type: String,
 		required: true,
@@ -24,4 +24,5 @@ var prodSchema = mongoose.Schema({
 /* Mongoose automatically looks for the plural version of your model name. Thus, for the example above, the model user is for the users collection in the database.
 ** declare a model called Prods which has schema prodSchema
  */
-module.exports = mongoose.model('Prods', prodSchema);
+// module.exports = model('Prods', prodSchema);
+export default model('Prods', prodSchema);
