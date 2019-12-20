@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "customer-app": {
-      "root": "",
+      "root": "e2e",
       "projectType": "application",
       "architect": {
         "build": {
