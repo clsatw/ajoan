@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +6,10 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements AfterViewInit {
-  @ViewChild('vid', {static: true}) private vid: ElementRef;
-  @ViewChild('myBtn', {static: true}) private btn: ElementRef;
+  @ContentChild('vid', {static: false}) vid !: ElementRef;
+  // @ViewChild('vid', {static: false}) private vid: ElementRef;
+  // @ViewChild('myBtn', {static: false}) private btn: ElementRef;
+  @ContentChild('myBtn', {static: false}) btn !: ElementRef;
   constructor() { }
 
   playVideo() {
