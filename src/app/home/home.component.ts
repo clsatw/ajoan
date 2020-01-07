@@ -6,8 +6,8 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements AfterViewInit {
-  @ViewChild('vid') private vid: ElementRef;
-  @ViewChild('myBtn') private btn: ElementRef;
+  @ViewChild('vid', {static: true}) private vid: ElementRef;
+  @ViewChild('myBtn', {static: true}) private btn: ElementRef;
   constructor() { }
 
   playVideo() {
