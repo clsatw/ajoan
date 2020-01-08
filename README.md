@@ -12,33 +12,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 // roach
 npm i express --save
-create a index.js on app root folder. a basic
+create a server.js on src root folder.
 // production build
-ng build --prod   // to create built files in ./dist folder, so index.js can render index.html from it folder
-node index
+npm run build:zh-hans   // to create specified language built files in ./dist folder, so server.js can render index.html from its folder
+node server (browse localhost:5000)
 
 ng g m shared
 make all feature modules import SharedModule
 
-how to deploy the site:
-    ng buid --prod
-    mon
+How to deploy the site on linux:
+    npm run build:zh-hans and others for supported languages
+    nginx is running in background to forward port 5000 to 80    
     pm2 start server.js
 
 

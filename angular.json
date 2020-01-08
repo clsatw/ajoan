@@ -4,7 +4,8 @@
   "newProjectRoot": "projects",
   "projects": {
     "customer-app": {
-      "root": "e2e",
+      "root": "",
+      "sourceRoot": "src",
       "projectType": "application",
       "architect": {
         "build": {
@@ -19,7 +20,7 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output": "/assets"
+                "output": "assets"
               },
               {
                 "glob": "favicon.ico",
